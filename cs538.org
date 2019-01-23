@@ -1,0 +1,116 @@
+Computer Communications and Networks
+* Chapter 1: Introduction
+- Computer Networks :: interconnected collection of autonomous computers
+- Autonomous :: no master/slave relation
+- Distributed Systems are higher layer than Computer Network
+** Social Issues
+- Network Neutrality :: Argument for communications that are not differentiated by content or source
+- Content Ownership issues :: DMCA takedowns etc
+- Anonymity
+- Privacy
+- Theft, malicious activity
+** Network Hardware
+*** Taxonomy by Transmission Media
+- Wired Networks:
+  - Twisted pair
+  - Coaxial Cable
+  - Fiber Optics
+- Wireless Networks:
+  - Radio Transmission
+  - Microwave
+  - Satellites
+- Wired-Wireless Integrated Networks
+*** Taxonomy by Transmission Technology 
+- Broadcast Links
+  - Single Channel Shared by all machines.
+  - Packets sent by one are received by all (broadcasted).
+  - Upon receiving a packet, each machine checks if the packet is relevant: either received or ignored
+  - Broadcasting :: one to all
+  - Multicasting :: one to a group/subset
+- Point-to-Point Links
+  - Many connections between individual pairs of machines
+  - A packet may travel through many intermediate machines otw to destination
+  - Routing play important role
+- Localized networks tend to use broadcasting
+- Large networks tend to use point-to-point
+*** Taxonomy by Scale
+| Scale    | Type                            |
+|----------+---------------------------------|
+| Vicinity | PAN (Personal Area Network)     |
+| Building | LAN (Local Area Network)        |
+| City     | MAN (Metropolitan Area Network) |
+| Country  | WAN (Wide Area Network)         |
+| Planet   | The Internet                    |
+- PAN :: Bluetooth PAN, computer connmail.google.com/mail/u/1/#inboxected to printer, speaker, keyboard
+- LAN :: Devices connected in a home to a common access point or ethernet switch.
+- MAN :: A metropolitan area network based on cable TV
+- WAN :: Cover a country or continent. An ISP network is a WAN. A VPN is also a WAN.
+- Internetwork :: A collection of interconnected networks. The most obvious example is the internet.
+** Network Protocol
+- Protocol layering is the main structuring method used to divide up network functionality.
+- At each layer, peers communicate with each other virtually. The communications are actualized by underlying layers. (lower-level of abstraction)
+- These lower layer _services_ are accessed by an _interface_
+- At bottom, messages are physically transmitted via the medium.
+- Layers, protocols, and interfaces.
+- Layers :: make complicated protocols more manageable. Provides information hiding/decoupling. This allows them to be changed with minimal hassle.
+- Protocol :: An a priori agreement between the communicating parties on how the communication is to proceed.
+- Lower layers protocols often contain additional header information including things like sequence number (e.g. if we needed to split our message into multiple parts), address, size, time, and/or other control fields.
+- Additionally, some networks have size limits, which means that we may have to split our message into multiple parts when moving to lower level protocols.
+** Design Issues for the Layers
+- Addressing :: A way to uniquely identify senders and receivers
+- Error Control :: error-detecting and correcting mechanism
+- Order :: Mechanism & out of order control, such as buffers
+- Flow Control :: Deal with problems e.g. A fast sender overwhelming a slow receiver, agreed-on transmission rate for senders.
+- Fragmentation :: put into small packets to transmit separately
+- *Multiplexing*
+- Routing :: decision on transmitting path among many available paths.
+- Each layer solves a particular problem but must include mechanisms to address a set of recurring design issues.
+| Issues                       | Example mechanism                                             |
+|------------------------------+---------------------------------------------------------------|
+| Robust to failures           | Codes for error detection/correction, routing around failures |
+| Network growth and evolution | Addressing and naming, Protocol layering                      |
+| Allocation of resources      | Multiple access, congestion control                           |
+| Security                     | Confidentiality of messages, Authentication                   |
+** Connection-oriented vs Connectionless Services
+- Connection-oriented:
+  - A connection is built before transmission occur
+  - e.g. TCP, seems that all packets go to the same path, but not really.
+- Connectionless:
+  - No connection is setup e.g. postal service
+  - Each packet must carry destination address, and each packet may take different path
+  - e.g. UDP
+| Connection Type | Service                 | Example              |
+|-----------------+-------------------------+----------------------|
+| Connection-     | Reliable message stream | Sequence of pages    |
+| Oriented        | Reliable byte stream    | Remote Login         |
+|                 | Unreliable connection   | Digitzed voice       |
+| Connectionless  | Unreliable datagram     | Electronic junk mail |
+|                 | Acknowledged datagram   | Registered mail      |
+|                 | Request-reply           | Database query       |
+** Service Primitives
+- Five service primitives for implementing a simple connection-oriented service.
+- TCP socket programming has these functions
+- Two "blocks"
+- Connectionless service use only SEND
+| Primitive  | Meaning                                    |
+|------------+--------------------------------------------|
+| LISTEN     | Block waiting for an incoming connection   |
+| CONNECT    | Establish a connection with a waiting peer |
+| RECEIVE    | Block waiting for an incoming message      |
+| SEND       | Send a message to the peer                 |
+| DISCONNECT | Terminate a connection                     |
+** Service to Protocol Relationship
+- A service is a set of primitives that a layer provides to the layer above. Says nothing about implementation
+- A protocol is a set of rules governing the format and meaning of the packets.
+- Analogy: Abstract Data Type is to Implementation as Service is to Protocol
+** Reference Models
+- OSI Reference Model
+- TCP/IP Reference Model
+** OSI Reference Model
+[[file:img/cs538/osi_model.png]]
+- From bottom up:
+  - Physical Layer :: Transmitting raw bits over physical medium
+  - Data Link Layer :: Break messages into data frames and transmit them sequentially.
+    - Error Control: Ack
+    - Flow Control: traffic regulation, buffer size
+    - For broadcast networks, how to control access to the shared medium: Medium Access Control sublayer.
