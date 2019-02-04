@@ -107,7 +107,7 @@ Computer Communications and Networks
 - OSI Reference Model
 - TCP/IP Reference Model
 ** OSI Reference Model
-[[file:img/cs538/osi_model.png]]
+   [[file:img/cs538/osi_model.png]]
 - From bottom up:
   - Physical Layer :: Transmitting raw bits over physical medium
   - Data Link Layer :: Break messages into data frames and transmit them sequentially.
@@ -241,9 +241,8 @@ Computer Communications and Networks
 ** Introduction
 - It is the foundation on which other layers are built. 
 - Key problem is to send digital message (bits) using only analog signals (modulation)
-** Theoretical Basis
 - Information transmitted on wires by varying physical properties such as voltage/current.
-*** Fourier Analysis
+** Fourier Analysis
 - In early 19th century, Fourier proved that any reasonably behaved periodic function g(t) with period T,
 \begin{equation}
 g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi nft)
@@ -253,3 +252,44 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - c, constant
 - Imagining that a data signal with a finite duration is periodic (repeats indefinitely), we can analyze signals using Fourier techniques.
 - See slides for Fourier Analysis of an example signal.
+- Fourier Analysis can tell us about the amplitude of our signal at different harmonic numbers.
+** Bandwidth-Limited Signals
+- Transmission lose some power.
+- But all Fourier components are not equally diminished. Higher frequency components lose more power.
+- This introduces distortion.
+- Usually, in a wire, amplitudes are transmitted mostly undiminished. But frequencies above a cutoff frequency are diminished.
+- The width of the frequency range transmitted without strong attenuation is called the *bandwidth*
+- In practice, the cutoff is somewhat arbitrary, quoted as the frequency at which received power has fallen by half.
+- The bandwidth is a physical property of the specific transmission medium.
+- Filters are often used to further limit the bandwidth of a signal.
+- 802.11 wireless channels use up to roughly 20 MHz, so the 802.11 radios filter the signal bandwidth to this size.
+- Another example, television channels occupy 6 MHz each. This filtering lets more signals share a given region of spectrum which improves the overall efficiency of the system.
+- It means that the frequency range for some signals will not start at 0 (passband).
+- Signals that run from 0 up to a maximum frequency are called *baseband* signals.
+- Signals that are shifted to occupy a higher range of frequencies (as is the case for all wireless transmissions) are called *passband* signals.
+[[file:img/cs538/bandwidth-limited-signal.png]]
+- Having less bandwidth (fewer harmonics) degrades the signal
+- An ordinary telephone line, often called a *voice-grade line* has an artificially introduced cutoff frequency just above 3000 Hz.
+- This means that the number of the highest harmonic passed through is roughly 3000/(L/8) or 24000/L
+- (L/8 because 8-bits in a byte)
+[[file:img/cs538/bandwidth-table.png]]
+- The table above shows that we can increase transmission rate, by decreasing number of harmonics sent, but this degrades our signal. Eventually it will be incomprehensible. We need at least ~8 harmonics.
+- In fact, we can achieve higher data rates with coding schemes that make use of several voltage levels.
+- Just note the ambiguity between analog bandwidth (frequency) and digital bandwidth (data rate)
+** The Maximum Data Rate of a Channel 
+- In 1924, an AT&T engineer, Henry Nyquist, realized that even a perfect channel has a finite transmission capacity.
+- In 1948, Claude Shannon carried the work further and extended it to the case of a channel subject to random noise. (most important paper in information theory)
+- *low-pass filter* is a filter that attenuates signals with frequencies higher than a cutoff
+- *sampling* is the reduction of a continuous signal to a discrete signal.
+- Nyquist showed that a signal run through a low-pass filter of bandwidth B, the signal can be reconstructed by making 2B samples per second.
+- Nyquist's theorem
+  - maximum data rate = 2B log_2 V bits/sec
+  - where signal consists of V discrete levels
+- SNR (Signal-to-Noise Ratio): S/N, but normally 10 log_10 S/N
+  - for signal power S and noise power N
+  - this scale is used due to the high range of possible S/N ratios
+- Units of log: decibels (dB)
+- An S/N ratio of 10 is 10 dB, ratio of 100 is 20 dB, ratio of 1000 is 30, etc.
+- Shannon's maximum data rate or *capacity* with Bandwidth B & S/N:
+  - maximum bits/sec = B log_2 (1 + S/N)
+- Example: ADSL with 1 MHz and SNR=40dB we get 13 Mbps. In practice, ADSL is specified up to 12 Mbps.
