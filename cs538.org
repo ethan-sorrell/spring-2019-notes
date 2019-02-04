@@ -114,3 +114,142 @@ Computer Communications and Networks
     - Error Control: Ack
     - Flow Control: traffic regulation, buffer size
     - For broadcast networks, how to control access to the shared medium: Medium Access Control sublayer.
+- Session Layer :: Allows users on different machines to establish "sessions" between them
+- Presentation Layer :: Syntax and semantics of the information transmitted.
+- Application Layer :: Applications above such as HTTP, WWW, FTP, Email
+*** In Summary
+- OSI is a principled international standard with seven layers:
+** TCP/IP Reference Model
+- Derives from ARPANET
+- Doesn't use Presentation or Session layer from OSI Reference Model
+- From 7 layers to 5.
+*** Layers 
+- Internet Layer
+  - Internet Protocol (IP)
+  - Connectionless service
+  - Routing & Congestion control
+- Transport Layer
+  - End-to-end protocols
+  - Transmission Control Protocol (TCP): reliable connection-oriented protocol
+  - User Datagram Protocol (UDP): unreliable, connectionless protocol
+- Application Layer
+  - TELNET, FTP, SMTP, etc.
+- Host-to-Network Layer
+  - Not defined in TCP/IP Model
+*** Protocols in Different Layers
+| Layer       | Protocols                    |
+|-------------+------------------------------|
+| Application | HTTP, SMTP, RTP, DNS         |
+| Transport   | TCP, UDP                     |
+| Internet    | IP, ICMP                     |
+| Link        | DSL, SONET, 802.11, Ethernet |
+- Example of differences in application layer protocols:
+  Real-time Transport Protocol (RTP) may not need to retransmit lost packets, because in a real-time scenario like voip, these packets are not needed if they are late.
+** OSI Model vs TCP/IP Model
+ - OSI model distinguishes
+   - Services
+   - Interfaces
+   - Protocols
+   - OOP concept: method, attributes, implementations
+ - OSI was created before the protocols were defined.
+ - TCP/IP was created after protocols were defined
+ - OSI was very influential and had clear goals/concepts, but was bogged down by complexity and politics.
+ - TCP/IP had very successful protocols, but a weak model derived later.
+*** Why OSI failed
+ - Bad timing
+ - Bad technology: many layers, complex and redundant
+ - Bad implementation
+ - Politics
+ - See "two elephants"
+** A Critique of the TCP/IP Reference Model
+ Problems:
+ - Service, interface, and protocol are not distinguished
+ - Not a general model
+ - Host-to-network "layer" not really a layer
+ - No mention of physical and data link layers
+ - Minor protocols are deeply entrenched and hard to replace
+** Internet: The ARPANET
+- From ARPANET to Internet
+  - ARPANET is a research network sponsored by DoD
+  - later connected hundreds of universities and government installations using leased telephone lines
+  - Had trouble when satellite and radio networks were added
+  - TCP/IP begins in 70s
+  - TCP/IP was built into the linux kernel
+*** Architecture
+- First Dialup reuse phone lines
+- DSL (Digital Subscriber Line) improved on this by sending digital transmission over these lines.
+- These require DSLAM (Digital Subscriber Line Access Multiplexer) which convert between digital and analog signal
+- ISP networks may be regional, national, or international
+- Tier 1 ISPs are the largest of these providers. They are the backbone of the internet.
+- IXP (Internet eXchange Point) these are points where ISPs connect their networks to exchange traffic
+- Within each network routers switch packets
+- Between networks, traffic exchange is set by business agreements.
+- Customers connect to the network by many means:
+  - Cable, DSL, Fiber, 3G/4G, Dialup
+*** Cellular Phone Systems
+- 1st Generation [AMPS (Advanced Mobile Phone System)]: limited channels, analog
+- 2nd Generation [GSM (Global System for Mobile communications), DAMPS, CDMA]: Digital
+  - DAMPS created to be backwards compatible with AMPS
+- 3rd Generation [UMTS (Universal Mobile Telecommunications System), also called WCDMA (Wideband Code Division Multiple Access)]: Digital, both voice and data, up to 14 Mbps down, 6 Mbps up.
+- 4th Generation: integrated
+*** 3G Mobile Phone Networks
+- 3G Network is based on spatial cells. Each cell services mobile devices via a base station.
+- As mobile devices move, base stations hand them off from one cell to the next 
+- UMTS Network:
+  - Phone connects to base station (node B)
+  - Base stations connect to Radio Network Controller. Here traffic is divided between data and voice signals.
+- Previously this was a *hard handover*, where a cellphone would stop connection with one tower and begin connection with another. Today, we have *soft handover* because cellphones have multiple antenna and make begin connection to next tower before terminating previous connection 
+*** Wireless LAN
+- Signals in the 2.4 GHz ISM band vary in strength due to many effects, such as multi-path fading due to reflections. As such, required complex transmission schemes e.g. OFDM
+- CSMA (Carrier Sense Multiple Access) designs are used because the range of a single radio may not cover the entire system, and multiple radios may incompletely overlap or interfere.
+- But instead, most WLANs simply are not Ad Hoc networks, but instead make use of an Access Point.
+** RFID and Sensor Networks
+- Passive networks in everyday objects:
+  - Tags are placed on objects
+  - Readers send signals that the tags reflect to communicate
+  - UHF RFID (Ultra-high Frequency) :: most common, 902-928 MHz band, distance of several meters
+  - HF RFID (High Frequency) :: 13.56 MHz, used in passports, credit cards, books, etc.
+- Active RFID also occurs.
+- Sensor networks spread small devices over an area. These devices send sensor data to collectors.
+** Network Standardization
+- ITU (International Telecommunication Union), an agency of the UN
+- Additionally, we have:
+  - ISO (International Standards Organization)
+  - NIST (National Institute of Standards and Technology)
+  - IEEE (Institute of Electrical and Electronics Engineers)
+** Network Standardization
+- When the ARPANET was set up, DoD created an informal committee to oversee it. Called the IAB (Internet Activities Board)
+- Later changed to Internet Architecture Board
+- Published a series of technical reports called RFCs (request for comments)
+- Then, in 1989, the IRTF (Internet Research Task Force) and IETF (Internet Engineering Task Force).
+- IRTF concentrates on long-term research while IETF focuses on short-term engineering issues
+- Later, the Internet Society was created. It is governed by elected trustees who appoint the IAB's members.
+- RFCs can become standards, but a process must be followed. To advance to the Draft Standard stage, a working implementation must have been rigorously tested by at least two independent sites for at least 4 months.
+- If the IAB is convinced, it can declare the RFC to be an Internet Standard.
+- Standards define what is needed for inter-operability
+| Body | Area               | Example Standards  |
+|------+--------------------+--------------------|
+| ITU  | Telecommunications | G.992, ADSL        |
+|      |                    | H.264, MPEG4       |
+| IEEE | Communications     | 802.3, Ethernet    |
+|      |                    | 802.11, WiFi       |
+| IETF | Internet           | RFC 2616, HTTP/1.1 |
+|      |                    | RFC 1034/1035, DNS |
+| W3C  | Web                | HTML5 Standard     |
+|      |                    | CSS Standard       |
+* Chapter 2: The Physical Layer
+** Introduction
+- It is the foundation on which other layers are built. 
+- Key problem is to send digital message (bits) using only analog signals (modulation)
+** Theoretical Basis
+- Information transmitted on wires by varying physical properties such as voltage/current.
+*** Fourier Analysis
+- In early 19th century, Fourier proved that any reasonably behaved periodic function g(t) with period T,
+\begin{equation}
+g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi nft)
+\end{equation}
+- where f = 1/T, the fundamental frequency
+- a_n & b_n, amplitudes of nth harmonics
+- c, constant
+- Imagining that a data signal with a finite duration is periodic (repeats indefinitely), we can analyze signals using Fourier techniques.
+- See slides for Fourier Analysis of an example signal.
