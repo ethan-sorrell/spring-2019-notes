@@ -293,3 +293,97 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - Shannon's maximum data rate or *capacity* with Bandwidth B & S/N:
   - maximum bits/sec = B log_2 (1 + S/N)
 - Example: ADSL with 1 MHz and SNR=40dB we get 13 Mbps. In practice, ADSL is specified up to 12 Mbps.
+- digital repeaters can be used to amplify signal and improve SNR.
+** Guided Transmission Data
+- Magnetic Media
+- Twisted Pair
+- Coaxial Cable
+- Power Lines
+- Fiber Optics
+*** Magnetic Media
+- If high bandwidth + cost per bit is the key factor, it can be cost effective to ship hard disks.
+- "Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway"
+*** Twisted Pair 
+- The oldest and most common media. A twisted pair of insulated copper wires.
+- Category 3 UTP (old)
+- Category 5 UTP (new)
+- UTP :: Unshielded Twisted Pair
+- Category 5 UTP has 4 twisted pairs. 100 Mbps Ethernet uses 2 for each direction.
+*** Link Terminology
+- Full-duplex link :: transmission in both directions simultaneously
+- Half-duplex link :: both directions, but not at the same time
+- Simplex link :: Fixed direction; uncommon
+*** Coaxial Cable
+- Longer distances at better speeds and less noise than twisted pairs
+*** Power Lines
+- Convenient, but in general does a horrible job.
+- An older idea, used by electricity companies for low-rate communication such as remote metering as well as in the home to control devices.
+- In more recent years, high-rate communication over these lines both inside the home as LAN and outside the home for broadband access.
+- Problems:
+  - Electrical properties (wiring) vary from home to home and change as in-home power usage changes (e.g. turning on a drier or space heater)
+  - Additionally transient currents (appliances turned on and off) create electrical noise
+  - Despite these difficulties, it is practical to send at least 100 Mbps over typical household electrical wiring using the right communication schemes.
+- Electrical signals at 50-60 Hz and attenuates at higher frequency for high-rate data communication.
+*** Fiber Optics
+- Increase in computation speed and communication speeds have historically been relatively similar.
+- Both around 16x per decade.
+- CPUs are approaching speed limitations
+- Fiber can be very fast, but is expensive.
+- Key for fiber, is to have reflection angle such that all light is reflected and none refracted
+- Multimode fiber :: many different rays bouncing around at different angle
+- Single-mode fiber
+  - Fiber's diameter is reduced to be very short. Light propagates like a straight line. More expensive, but more effective (longer travel distance)
+- Fiber has enormous bandwidth (THz) and tiny signal loss
+*** Fiber Cables
+- Single fiber
+  - has core so narrow (10 microns) light can not bounce around
+  - Used with lasers for long distances
+- Multiple fiber
+  - Light can bounce (50 micron core)
+  - Used with LEDs for cheaper, shorter distance links
+** Electromagnetic Spectrum
+- To manage interference, use of spectrum is regulated and licensed e.g. sold at auction.
+- In addition, there are also unlicensed (ISM) bands. Free for use at lower power.
+  - Used for networking; WiFi, Bluetooth, etc.
+- FHSS (frequency hopping spread spectrum_ :: hops from frequency to frequency hundreds of times per second. Popular for military as its hard to detect and jam
+- CDMA (code division multiple access) :: uses different codes for multi-plexing
+- DSSS (direct sequence spread spectrum) :: uses a code sequence to spread the data signal over a wider frequency band. Used to let multiple signals share same frequency band
+- UWB (ultra-wideband) :: sends a series of rapid pulses, varying their positions to communication information.
+*** Radio Transmission
+- In the VLF, LF, and MF bands, radio waves follow the curvature of the earth.
+- In the HF band, they bounce off the ionosphere.
+*** Microwave Transmission
+- Above 100 Mhz, waves travel in nearly straight lines.
+- Satellite TV dish must be accurately aligned.
+- MCI: Microwave Communications Inc.
+  - Bought small plots every 50km for towers. Later acquired by verizon
+- Microwave does not pass through buildings well.
+- Increased demand has lead to use higher and higher frequencies
+- Bands up to 10 GHz are now in routine use. Above 4 GHz absorption by rain/humidity becomes a problem
+*** Infrared Transmission
+- TV remote
+** Politics of the Electromagnetic Spectrum
+- US has FCC (Federal Communications Commission)
+- Three algorithms:
+  - Beauty Contest
+    - Each carrier argues why its proposal serves public interest
+    - Government officials decide
+    - Leads to bribery and corruption
+  - Lottery 
+    - problem: companies with no interest enter the lottery then resell
+  - Auction
+    - create monopolistic environment
+- The ISM (industrial, scientific, and medical) bands
+  - Used by garage door openers, cordless phones, bluetooth, wifi, etc.
+  - FCC mandates that devices in this band limit their transmit power and use other techniques to spread their signals over a range of frequencies
+- FCC 2009 allows unlicensed use of white spaces around 700 MHz.
+** Digital Modulation and Multiplexing
+- Digital modulation :: converting between bits and signals
+- Baseband transmission :: signals occupy frequencies from zero up to a max
+  - particularly for non-optical wired channels
+- Passband transmission :: signals occupy a band of frequencies around frequency of carrier signal
+  - used by most other types of channels
+*** Baseband transmission
+- NRZ (Non-return-to-zero) scheme
+  - Use a positive voltage to represent a 1 and a negative voltage to represent 0
+  - Sense there is no return to 0, precise timing is requires to decode streams of repeating bits e.g. was the stream 5 consecutive 0s or 4 consecutive?
