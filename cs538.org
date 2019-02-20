@@ -1,4 +1,8 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://gongzhitaao.org/orgcss/org.css"/>
+#+HTML_HEAD: <style>pre.src {background-color: #303030; color: #e5e5e5;}</style>
 Computer Communications and Networks
+
+Nyquist's Theorem for Exam 1
 * Chapter 1: Introduction
 - Computer Networks :: interconnected collection of autonomous computers
 - Autonomous :: no master/slave relation
@@ -282,7 +286,7 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - *low-pass filter* is a filter that attenuates signals with frequencies higher than a cutoff
 - *sampling* is the reduction of a continuous signal to a discrete signal.
 - Nyquist showed that a signal run through a low-pass filter of bandwidth B, the signal can be reconstructed by making 2B samples per second.
-- Nyquist's theorem
+- *Nyquist's theorem*
   - maximum data rate = 2B log_2 V bits/sec
   - where signal consists of V discrete levels
 - SNR (Signal-to-Noise Ratio): S/N, but normally 10 log_10 S/N
@@ -387,3 +391,139 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - NRZ (Non-return-to-zero) scheme
   - Use a positive voltage to represent a 1 and a negative voltage to represent 0
   - Sense there is no return to 0, precise timing is requires to decode streams of repeating bits e.g. was the stream 5 consecutive 0s or 4 consecutive?
+- Need bandwidth of at least B/2 Hz when the bit rate is B bits/sec
+*** Bandwidth Efficiency
+- In the case of limited bandwidth, it is possible to achieve better data rates by using a coding scheme with more than two signaling levels.
+- For example, by using four voltages we can send 2 bits at once as a single symbol (if the receiver can accurately distinguish our four levels)
+*** Clock Recovery
+- As we've mentioned, it is difficult to discern the multiplicity of repeated symbols in a NRZ scheme.
+- One scheme to remedy this, is to XOR the data signal and clock signal together. This is called Manchester encoding
+- Unfortunately, this type of encoding requires twice as much bandwidth as a simple NRZ scheme.
+- Another strategy is to represent 1 via a transition and 0 via no transition. This is used in USB
+  - This is called NRZI (Non-return-to-zero Inverted)
+  - This solves our problem when transmitting many repeated 1s
+  - It does not help with strings of 0s
+  - Older digital telephone lines requires no more than 15 consecutive 0s
+- Another solution, is to break up strings 0s into small groups e.g. 4B/5B
+- 4B/5B :: every 5 bits is mapped into a particular 5-bit pattern. This guarantees no more than three consecutive 0s
+  - This adds better than 25% overhead (better than 100% overhead from manchester)
+- Yet another approach is *Scrambling*
+  - Here we XOR our data with a pseudorandom sequence
+  - Adds no bandwidth or time overhead (XOR may be implemented very efficiently)
+  - It does not guarantee no long runs of repeated bits, but it makes it more unlikely
+*** Balanced Signal
+- A *balanced signal* has roughly same positive and negative voltage even over short period of time.
+- This helps with clock recovery
+- Bipolar Encoding :: use two different voltage levels (e.g. +1V and -1V) to represent 1 with 0V representing 0.
+  - Sending a 1 alternates between +1V and -1V guaranteeing a balanced signal
+** Passband Transmission
+- Passband tranmission :: signal occupies a band of frequencies around the frequency of the carrier signal.
+- ASK (Amplitude Shift Keying) :: two different amplitudes are used to represent 0 and 1. e.g. an amplitude of 0 represents 0 while a nonzero amplitude encodes a 1 
+[[file:img/cs538/ask_signal.png]]
+- FSK (Frequency Shift Keying) :: two or more different tones/frequencies are used
+[[file:img/cs538/fsk_signal.png]]
+- PSK (Phase Shift Keying) :: changing a number phases (i.e. shifting some degrees) to represent each symbol
+- BPSK (Binary Phase Shift Keying) :: type of PSK where the the wave is shift 0 or 180 degrees to represent 0 and 1
+- QPSK (Quadrature Phase Shift Keying) :: type of PSK that uses four unique shifts to transmit 2 bits of information per symbol.
+- We can combine these schemes and use more levels to transmit more bits per symbol.
+  - However, frequency and phase can not be changed in unison since they are related
+  - Typically, *amplitude and phase* are modulate in combination
+  - This gives rise to QAM schemes (Quadrature Amplitude Modulation)
+[[file:img/cs538/qam_signal.png]] 
+- For example in cable internet, it is common to use QPSK for upstream and QAM-64 for downstream.
+- How do we assign bits to symbols in the constellation?
+  - If we used a symbol counting scheme, it would be possible for a small error to result in all bits being wrong.
+  - Instead we use a *gray-coding* scheme, s.t. small errors will cause a minimum number of bits to be transmitted incorrectly.
+** Frequency Division Multiplexing
+- FDM (Frequency Division Multiplexing) :: Frequency spectrum is divided into frequency bands, with each user having "possession" of a certain band
+  - e.g. AM radio/FM radio
+  - Filters do not have hard edges in practice so there are guard bands between channels
+  - Also *OFDM* which does not use guard bands which allows for more channels in the same bandwidth.
+    - Signals are overlapping, but sampled from minima of surrounding waves (see diagram)
+    - [[file:img/cs538/ofdm_signal.png]]
+    - Used in 802.11, 4G, ADSL
+** Time Division Multiplexing
+- TDM (Time Division Multiplexing) :: Users take turns in a round-robin fashion
+** Code Division Multiplexing
+- CDM (Code Division Multiplexing) :: A form of *spread spectrum* communication in which a narrowband signal is spread out over a wider frequency band
+- same as CDMA
+- tolerant of interference
+- Essentially, different channels speak in own "language" and discard all other "languages"
+- Each bit time is divided into short intervals called *chips*
+- Each station is assigned a unique m-bit code called a chip sequence.
+  - Send 1 by sending chip sequence
+  - Send 0 by sending binary complement of chip sequence
+- E.g. 1 MHz for 100 stations
+  - FDM 
+    - each 10 kHz -> 10 kbps
+  - CDMA
+    - Each station use 1 MHz
+    - m=100 each station sends 1 Mbps / 100 = 10 kbps
+    - In fact, we can use m<100 with 100 channels.
+    - See slides for illustration and explanation of how channels are combined and recovered
+** Public Switched Telephone Network
+*** Major Components of the Telephone System
+- Local loops
+  - Analog twisted pairs going to houses and businesses
+  - Only used at ends of network (near leaf nodes)
+- Trunks
+  - Digital fiber optics connecting the switching offices
+- Switching offices 
+  - Where calls are moved from one trunk to another
+*** Politics of Telephones
+*see slides for full details*
+- Prior to 1984, Bell system did both local and long distance service in US
+- Jan 1984 AT&T lost lawsuit to US govt and was broken into AT&T long lines and 23 BOCs (bell operating companies)
+- US was divided into 164 LATAs (Local Access and Transport Areas) 
+  - approximately same as area code?
+- Within a LATA, a LEC (Local Exchange Carrier) had a monopoly, usually BOCs
+- Inter-LATA traffic (like long distance call) was handled by an IXC (Inter-exchange Carrier) like AT&T and Verizon
+- IXC built a switching office in each LATA called a POP (point of presence)
+- Finally, in 1995 Congress allows these companies to operate in different fields, ending the segregation of these services.
+*** Local Loop: Modems, ADSL, and Fiber
+- An end office has up to 10k local loops
+- e.g. 205-520-XXXX all in same end office. 0000 to 9999 each have own local loop
+**** Modems
+- Modems are used over voice-grade a telephone line.
+- Limited to 3100 Hz with 2400 symbols/s in practice
+- Previously 2400 bps modem possible using 0V for 0 and 1V for 1 w/ 1 bit per symbol
+- Using QPSK 4800 bps achieved with 2 bits/symbol
+- V.32 modem uses 32 constellations allowing for 9600 bps
+- Similar incremental gains in V.32 bis, V.34, and finally V.34 bis which gives 33.6 kbps
+- Shannon limit is about 35 kbps. V34 bis is final version.
+- These rates assume that both ends of connection have analog local loop.
+- In fact, the ISP side of connection often has digital line. This allows for 56 kbps.
+  - 70 kbps for Shannon limit, but in each 8 bit sample 1 used for control
+  - No control bit in Europe -> 64 kbps
+  - US version chosen for international standard
+**** Digital Subscriber Line
+- Comparison
+  - Phone line :: 56 kbps
+  - Cable TV 10 Mbps
+- Phone lines had 3 Mhz - 4 MHz filter
+- xDSL had no such filter, improving speeds
+  - Unfortunately, this limits the bandwidth as distance increases
+***** Approaches:
+- Divide the spectrum on the local loop into three bands:
+  - POTS (plain old telephone service)
+  - upstream
+  - downstream
+- DMT (Discrete MultiTone) use the OFDM scheme
+  - 1.1 MHz divided into 256 channels (4.3 kHz each)
+  - channel 0 used for POTS
+  - channel 1-5 no use (guard channel)
+  - Channel 6-256: one upstream control, one downstream control, rest for data
+  - ADSL has 80-90% for downstream
+  - ADSL standard is 8 Mbps downstream and 1 Mbps upstream
+  - Now ADSL2+ is 24 Mbps downstream by usinng 2.2 MHz over twisted pair
+  - These are all best cases speeds for good lines in close proximity to end office
+** Fiber to the Home (FttH)
+- FttX - near to home (neighborhood, curb, etc)
+- One wavelength shared between all home for downstream and another for upstream. Then optical splitter/combiner used 
+** Trunks and Multiplexing
+*** Digitizing Voice Signals
+- 12 calls is a *group* and five groups compose a *supergroup*
+- Codec digitizes analog sample at end office
+- Standard uncompressed data rate is 8 bits every 125 $\mu$ seconds -> 64 kbps
+- US and Japan use T1 line
+- E1 used in Europe and elsewhere
