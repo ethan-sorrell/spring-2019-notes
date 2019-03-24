@@ -4,12 +4,12 @@ Computer Communications and Networks
 
 Nyquist's Theorem for Exam 1
 * Chapter 1: Introduction
-- Computer Networks :: interconnected collection of autonomous computers
-- Autonomous :: no master/slave relation
+- *Computer Networks* - interconnected collection of autonomous computers
+- *Autonomous* - no master/slave relation
 - Distributed Systems are higher layer than Computer Network
 ** Social Issues
-- Network Neutrality :: Argument for communications that are not differentiated by content or source
-- Content Ownership issues :: DMCA takedowns etc
+- *Network Neutrality* - Argument for communications that are not differentiated by content or source
+- *Content Ownership issues* - DMCA takedowns etc
 - Anonymity
 - Privacy
 - Theft, malicious activity
@@ -29,8 +29,8 @@ Nyquist's Theorem for Exam 1
   - Single Channel Shared by all machines.
   - Packets sent by one are received by all (broadcasted).
   - Upon receiving a packet, each machine checks if the packet is relevant: either received or ignored
-  - Broadcasting :: one to all
-  - Multicasting :: one to a group/subset
+  - *Broadcasting* - one to all
+  - *Multicasting* - one to a group/subset
 - Point-to-Point Links
   - Many connections between individual pairs of machines
   - A packet may travel through many intermediate machines otw to destination
@@ -56,18 +56,18 @@ Nyquist's Theorem for Exam 1
 - These lower layer _services_ are accessed by an _interface_
 - At bottom, messages are physically transmitted via the medium.
 - Layers, protocols, and interfaces.
-- Layers :: make complicated protocols more manageable. Provides information hiding/decoupling. This allows them to be changed with minimal hassle.
-- Protocol :: An a priori agreement between the communicating parties on how the communication is to proceed.
+- *Layers* - make complicated protocols more manageable. Provides information hiding/decoupling. This allows them to be changed with minimal hassle.
+- *Protocol* - An a priori agreement between the communicating parties on how the communication is to proceed.
 - Lower layers protocols often contain additional header information including things like sequence number (e.g. if we needed to split our message into multiple parts), address, size, time, and/or other control fields.
 - Additionally, some networks have size limits, which means that we may have to split our message into multiple parts when moving to lower level protocols.
 ** Design Issues for the Layers
-- Addressing :: A way to uniquely identify senders and receivers
-- Error Control :: error-detecting and correcting mechanism
-- Order :: Mechanism & out of order control, such as buffers
-- Flow Control :: Deal with problems e.g. A fast sender overwhelming a slow receiver, agreed-on transmission rate for senders.
-- Fragmentation :: put into small packets to transmit separately
+- *Addressing* - A way to uniquely identify senders and receivers
+- *Error Control* - error-detecting and correcting mechanism
+- *Order* - Mechanism & out of order control, such as buffers
+- *Flow Control* - Deal with problems e.g. A fast sender overwhelming a slow receiver, agreed-on transmission rate for senders.
+- *Fragmentation* - put into small packets to transmit separately
 - *Multiplexing*
-- Routing :: decision on transmitting path among many available paths.
+- *Routing* - decision on transmitting path among many available paths.
 - Each layer solves a particular problem but must include mechanisms to address a set of recurring design issues.
 | Issues                       | Example mechanism                                             |
 |------------------------------+---------------------------------------------------------------|
@@ -126,7 +126,8 @@ Nyquist's Theorem for Exam 1
 ** TCP/IP Reference Model
 - Derives from ARPANET
 - Doesn't use Presentation or Session layer from OSI Reference Model
-- From 7 layers to 5.
+- From 7 layers to 4.
+- Books instead uses a 5 layer model.
 *** Layers 
 - Internet Layer
   - Internet Protocol (IP)
@@ -202,7 +203,7 @@ Nyquist's Theorem for Exam 1
 - UMTS Network:
   - Phone connects to base station (node B)
   - Base stations connect to Radio Network Controller. Here traffic is divided between data and voice signals.
-- Previously this was a *hard handover*, where a cellphone would stop connection with one tower and begin connection with another. Today, we have *soft handover* because cellphones have multiple antenna and make begin connection to next tower before terminating previous connection 
+- Previously this was a *hard handover*, where a cellphone would stop connection with one tower and begin connection with another. Today, we have *soft handover* because cellphones have multiple antenna and can begin connection to next tower before terminating previous connection 
 *** Wireless LAN
 - Signals in the 2.4 GHz ISM band vary in strength due to many effects, such as multi-path fading due to reflections. As such, required complex transmission schemes e.g. OFDM
 - CSMA (Carrier Sense Multiple Access) designs are used because the range of a single radio may not cover the entire system, and multiple radios may incompletely overlap or interfere.
@@ -349,10 +350,10 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - To manage interference, use of spectrum is regulated and licensed e.g. sold at auction.
 - In addition, there are also unlicensed (ISM) bands. Free for use at lower power.
   - Used for networking; WiFi, Bluetooth, etc.
-- FHSS (frequency hopping spread spectrum_ :: hops from frequency to frequency hundreds of times per second. Popular for military as its hard to detect and jam
+- FHSS (frequency hopping spread spectrum) :: hops from frequency to frequency hundreds of times per second. Popular for military as its hard to detect and jam
 - CDMA (code division multiple access) :: uses different codes for multi-plexing
 - DSSS (direct sequence spread spectrum) :: uses a code sequence to spread the data signal over a wider frequency band. Used to let multiple signals share same frequency band
-- UWB (ultra-wideband) :: sends a series of rapid pulses, varying their positions to communication information.
+- UWB (ultra-wideband) :: sends a series of rapid pulses, varying their positions to communicate information.
 *** Radio Transmission
 - In the VLF, LF, and MF bands, radio waves follow the curvature of the earth.
 - In the HF band, they bounce off the ionosphere.
@@ -498,7 +499,7 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
   - US version chosen for international standard
 **** Digital Subscriber Line
 - Comparison
-  - Phone line :: 56 kbps
+  - *Phone line* - 56 kbps
   - Cable TV 10 Mbps
 - Phone lines had 3 Mhz - 4 MHz filter
 - xDSL had no such filter, improving speeds
@@ -527,3 +528,66 @@ g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi
 - Standard uncompressed data rate is 8 bits every 125 $\mu$ seconds -> 64 kbps
 - US and Japan use T1 line
 - E1 used in Europe and elsewhere
+* Chapter 3: The Data Link Layer
+- Data Link Layer is below IP layer
+** Function Provided by Data Link Layer
+- Provide service interface to network layer
+- Deal with transmission errors
+- Regulate data flow (slow receiver not blocked by fast sender)
+- Packet consists of header, payload, and trailer
+- The trailer is a hash which can be checked against the header + payload
+- Called CRC function
+** Services Provided to Network Layer 
+Services
+- Unacknowledged connectionless service
+  - IEEE 802.3 LAN
+- Acknowledged connectionless service
+  - IEEE 802.11 WLAN
+- Acknowledged connection-oriented service
+  - Point-to-point leased telephone line
+** Framing
+Possible methods:
+1. Character Count
+2. Flag bytes with byte stuffing
+3. Starting and Ending flags, with bit stuffing
+4. Physical layer coding violations
+Elaboration:
+- Character Count
+  - Difficult to recover after an error
+- Flag bytes with byte stuffing
+  - Flag used to mark beginning and end of frame
+  - Escape sequence needed if flag is contained in message
+- Flag with bit stuffing
+  - Flag: 01111110
+  - If there are 6 consecutive 1s in the message, stuff with a 0 after first five 1s
+- Physical layer coding violations
+  - Use coding specific sequence to delimit frames
+  - e.g. in 4B/5B there are many unused sequences we could use as delimiter
+** Error Control
+Methods:
+- Acknowledgment
+- Timer
+- Sequence Number
+** Flow Control 
+Methods:
+- Feedback-based flow control
+- Rate-based flow control
+** Elementary Data Link Protocols
+- Commonly implemented as part of OS drivers and Network Interface Cards
+** Sliding Window Protocol
+- Piggyback
+  - temporarily delay outgoing ack so it can be attached to next outgoing data frame
+  - but there might not be a outgoing packets
+  - so we wait a period, if no outgoing packets, send out ack on its own
+- Example Protocols:
+  - one-bit sliding window protocol
+  - protocol using Go Back N
+  - protocol using selective repeat
+- General Sliding Window Protocols
+  - Sending window: a set of sequences numbers corresponding to frames sent but unacknowledged
+  - Receiving window: a set of sequence numbers corresponding to frames to be received
+  - Sequence number: 2^n - 1 (given n bits we have this many available numbers)
+  - Stop-and-wait corresponds to n=1
+- *Some seq, ack was unintuitive*
+  - An ack of 0 means acknowledging frame with seq number 0
+ 

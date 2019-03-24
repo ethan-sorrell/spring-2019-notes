@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-02-24 Sun 23:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ethan" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://gongzhitaao.org/orgcss/org.css"/>
+<style>pre.src {background-color: #303030; color: #e5e5e5;}</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgcf72074">1. Chapter 1: Introduction</a>
+<ul>
+<li><a href="#org99cf2e4">1.1. Social Issues</a></li>
+<li><a href="#org5b9dfaa">1.2. Network Hardware</a>
+<ul>
+<li><a href="#orgaeba010">1.2.1. Taxonomy by Transmission Media</a></li>
+<li><a href="#org7304924">1.2.2. Taxonomy by Transmission Technology</a></li>
+<li><a href="#orga26f0e8">1.2.3. Taxonomy by Scale</a></li>
+</ul>
+</li>
+<li><a href="#org5c7e0d6">1.3. Network Protocol</a></li>
+<li><a href="#org97c59a5">1.4. Design Issues for the Layers</a></li>
+<li><a href="#org59f6281">1.5. Connection-oriented vs Connectionless Services</a></li>
+<li><a href="#orgf9295b2">1.6. Service Primitives</a></li>
+<li><a href="#org783d1cf">1.7. Service to Protocol Relationship</a></li>
+<li><a href="#org4d98a88">1.8. Reference Models</a></li>
+<li><a href="#org0b49a3b">1.9. OSI Reference Model</a>
+<ul>
+<li><a href="#org41b2d9c">1.9.1. In Summary</a></li>
+</ul>
+</li>
+<li><a href="#orgb90e0b1">1.10. TCP/IP Reference Model</a>
+<ul>
+<li><a href="#org83c681f">1.10.1. Layers</a></li>
+<li><a href="#orgbec3927">1.10.2. Protocols in Different Layers</a></li>
+</ul>
+</li>
+<li><a href="#org4746864">1.11. OSI Model vs TCP/IP Model</a>
+<ul>
+<li><a href="#orgb170328">1.11.1. Why OSI failed</a></li>
+</ul>
+</li>
+<li><a href="#orgb344f10">1.12. A Critique of the TCP/IP Reference Model</a></li>
+<li><a href="#org0e76da3">1.13. Internet: The ARPANET</a>
+<ul>
+<li><a href="#org53e6f79">1.13.1. Architecture</a></li>
+<li><a href="#org37c5b67">1.13.2. Cellular Phone Systems</a></li>
+<li><a href="#org0891d0d">1.13.3. 3G Mobile Phone Networks</a></li>
+<li><a href="#orgc455188">1.13.4. Wireless LAN</a></li>
+</ul>
+</li>
+<li><a href="#org945dd46">1.14. RFID and Sensor Networks</a></li>
+<li><a href="#orgfca1f51">1.15. Network Standardization</a></li>
+<li><a href="#org45408e1">1.16. Network Standardization</a></li>
+</ul>
+</li>
+<li><a href="#org4e9a7bf">2. Chapter 2: The Physical Layer</a>
+<ul>
+<li><a href="#org5b83ae4">2.1. Introduction</a></li>
+<li><a href="#orgfb36431">2.2. Fourier Analysis</a></li>
+<li><a href="#org1707f3e">2.3. Bandwidth-Limited Signals</a></li>
+<li><a href="#orgbf43504">2.4. The Maximum Data Rate of a Channel</a></li>
+<li><a href="#orga314932">2.5. Guided Transmission Data</a>
+<ul>
+<li><a href="#org2568720">2.5.1. Magnetic Media</a></li>
+<li><a href="#org81686df">2.5.2. Twisted Pair</a></li>
+<li><a href="#org9e35577">2.5.3. Link Terminology</a></li>
+<li><a href="#orgcf17764">2.5.4. Coaxial Cable</a></li>
+<li><a href="#orgd2c4c90">2.5.5. Power Lines</a></li>
+<li><a href="#org59571d0">2.5.6. Fiber Optics</a></li>
+<li><a href="#orgffb6aca">2.5.7. Fiber Cables</a></li>
+</ul>
+</li>
+<li><a href="#orgc369d8a">2.6. Electromagnetic Spectrum</a>
+<ul>
+<li><a href="#org44614c9">2.6.1. Radio Transmission</a></li>
+<li><a href="#orgd49055f">2.6.2. Microwave Transmission</a></li>
+<li><a href="#orgc889074">2.6.3. Infrared Transmission</a></li>
+</ul>
+</li>
+<li><a href="#orgc809d0d">2.7. Politics of the Electromagnetic Spectrum</a></li>
+<li><a href="#org09e3056">2.8. Digital Modulation and Multiplexing</a>
+<ul>
+<li><a href="#org0058f82">2.8.1. Baseband transmission</a></li>
+<li><a href="#org73b2f28">2.8.2. Bandwidth Efficiency</a></li>
+<li><a href="#orgaadf63f">2.8.3. Clock Recovery</a></li>
+<li><a href="#org959822e">2.8.4. Balanced Signal</a></li>
+</ul>
+</li>
+<li><a href="#org9d8e4fa">2.9. Passband Transmission</a></li>
+<li><a href="#org9fad734">2.10. Frequency Division Multiplexing</a></li>
+<li><a href="#org9f87988">2.11. Time Division Multiplexing</a></li>
+<li><a href="#org7c52ca1">2.12. Code Division Multiplexing</a></li>
+<li><a href="#orgcc16463">2.13. Public Switched Telephone Network</a>
+<ul>
+<li><a href="#org5bdae10">2.13.1. Major Components of the Telephone System</a></li>
+<li><a href="#org332304b">2.13.2. Politics of Telephones</a></li>
+<li><a href="#org26781a1">2.13.3. Local Loop: Modems, ADSL, and Fiber</a></li>
+</ul>
+</li>
+<li><a href="#org8e78060">2.14. Fiber to the Home (FttH)</a></li>
+<li><a href="#org16c52cc">2.15. Trunks and Multiplexing</a>
+<ul>
+<li><a href="#org86caae6">2.15.1. Digitizing Voice Signals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Computer Communications and Networks
+</p>
+
+<p>
+Nyquist's Theorem for Exam 1
+</p>
+<div id="outline-container-orgcf72074" class="outline-2">
+<h2 id="orgcf72074"><span class="section-number-2">1</span> Chapter 1: Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<dl class="org-dl">
+<dt>Computer Networks</dt><dd>interconnected collection of autonomous computers</dd>
+<dt>Autonomous</dt><dd>no master/slave relation</dd>
+<dt>(no term)</dt><dd>Distributed Systems are higher layer than Computer Network</dd>
+</dl>
+</div>
+<div id="outline-container-org99cf2e4" class="outline-3">
+<h3 id="org99cf2e4"><span class="section-number-3">1.1</span> Social Issues</h3>
+<div class="outline-text-3" id="text-1-1">
+<dl class="org-dl">
+<dt>Network Neutrality</dt><dd>Argument for communications that are not differentiated by content or source</dd>
+<dt>Content Ownership issues</dt><dd>DMCA takedowns etc</dd>
+<dt>(no term)</dt><dd>Anonymity</dd>
+<dt>(no term)</dt><dd>Privacy</dd>
+<dt>(no term)</dt><dd>Theft, malicious activity</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org5b9dfaa" class="outline-3">
+<h3 id="org5b9dfaa"><span class="section-number-3">1.2</span> Network Hardware</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgaeba010" class="outline-4">
+<h4 id="orgaeba010"><span class="section-number-4">1.2.1</span> Taxonomy by Transmission Media</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>Wired Networks:
+<ul class="org-ul">
+<li>Twisted pair</li>
+<li>Coaxial Cable</li>
+<li>Fiber Optics</li>
+</ul></li>
+<li>Wireless Networks:
+<ul class="org-ul">
+<li>Radio Transmission</li>
+<li>Microwave</li>
+<li>Satellites</li>
+</ul></li>
+<li>Wired-Wireless Integrated Networks</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7304924" class="outline-4">
+<h4 id="org7304924"><span class="section-number-4">1.2.2</span> Taxonomy by Transmission Technology</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>Broadcast Links
+<ul class="org-ul">
+<li>Single Channel Shared by all machines.</li>
+<li>Packets sent by one are received by all (broadcasted).</li>
+<li>Upon receiving a packet, each machine checks if the packet is relevant: either received or ignored</li>
+<li id="Broadcasting">one to all</li>
+<li id="Multicasting">one to a group/subset</li>
+</ul></li>
+<li>Point-to-Point Links
+<ul class="org-ul">
+<li>Many connections between individual pairs of machines</li>
+<li>A packet may travel through many intermediate machines otw to destination</li>
+<li>Routing play important role</li>
+</ul></li>
+<li>Localized networks tend to use broadcasting</li>
+<li>Large networks tend to use point-to-point</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga26f0e8" class="outline-4">
+<h4 id="orga26f0e8"><span class="section-number-4">1.2.3</span> Taxonomy by Scale</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Scale</th>
+<th scope="col" class="org-left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Vicinity</td>
+<td class="org-left">PAN (Personal Area Network)</td>
+</tr>
+
+<tr>
+<td class="org-left">Building</td>
+<td class="org-left">LAN (Local Area Network)</td>
+</tr>
+
+<tr>
+<td class="org-left">City</td>
+<td class="org-left">MAN (Metropolitan Area Network)</td>
+</tr>
+
+<tr>
+<td class="org-left">Country</td>
+<td class="org-left">WAN (Wide Area Network)</td>
+</tr>
+
+<tr>
+<td class="org-left">Planet</td>
+<td class="org-left">The Internet</td>
+</tr>
+</tbody>
+</table>
+<dl class="org-dl">
+<dt>PAN</dt><dd>Bluetooth PAN, computer connmail.google.com/mail/u/1/#inboxected to printer, speaker, keyboard</dd>
+<dt>LAN</dt><dd>Devices connected in a home to a common access point or ethernet switch.</dd>
+<dt>MAN</dt><dd>A metropolitan area network based on cable TV</dd>
+<dt>WAN</dt><dd>Cover a country or continent. An ISP network is a WAN. A VPN is also a WAN.</dd>
+<dt>Internetwork</dt><dd>A collection of interconnected networks. The most obvious example is the internet.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-org5c7e0d6" class="outline-3">
+<h3 id="org5c7e0d6"><span class="section-number-3">1.3</span> Network Protocol</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Protocol layering is the main structuring method used to divide up network functionality.</li>
+<li>At each layer, peers communicate with each other virtually. The communications are actualized by underlying layers. (lower-level of abstraction)</li>
+<li>These lower layer <span class="underline">services</span> are accessed by an <span class="underline">interface</span></li>
+<li>At bottom, messages are physically transmitted via the medium.</li>
+<li>Layers, protocols, and interfaces.</li>
+<li id="Layers">make complicated protocols more manageable. Provides information hiding/decoupling. This allows them to be changed with minimal hassle.</li>
+<li id="Protocol">An a priori agreement between the communicating parties on how the communication is to proceed.</li>
+<li>Lower layers protocols often contain additional header information including things like sequence number (e.g. if we needed to split our message into multiple parts), address, size, time, and/or other control fields.</li>
+<li>Additionally, some networks have size limits, which means that we may have to split our message into multiple parts when moving to lower level protocols.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org97c59a5" class="outline-3">
+<h3 id="org97c59a5"><span class="section-number-3">1.4</span> Design Issues for the Layers</h3>
+<div class="outline-text-3" id="text-1-4">
+<dl class="org-dl">
+<dt>Addressing</dt><dd>A way to uniquely identify senders and receivers</dd>
+<dt>Error Control</dt><dd>error-detecting and correcting mechanism</dd>
+<dt>Order</dt><dd>Mechanism &amp; out of order control, such as buffers</dd>
+<dt>Flow Control</dt><dd>Deal with problems e.g. A fast sender overwhelming a slow receiver, agreed-on transmission rate for senders.</dd>
+<dt>Fragmentation</dt><dd>put into small packets to transmit separately</dd>
+<dt>(no term)</dt><dd><b>Multiplexing</b></dd>
+<dt>Routing</dt><dd>decision on transmitting path among many available paths.</dd>
+<dt>(no term)</dt><dd>Each layer solves a particular problem but must include mechanisms to address a set of recurring design issues.</dd>
+</dl>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Issues</th>
+<th scope="col" class="org-left">Example mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Robust to failures</td>
+<td class="org-left">Codes for error detection/correction, routing around failures</td>
+</tr>
+
+<tr>
+<td class="org-left">Network growth and evolution</td>
+<td class="org-left">Addressing and naming, Protocol layering</td>
+</tr>
+
+<tr>
+<td class="org-left">Allocation of resources</td>
+<td class="org-left">Multiple access, congestion control</td>
+</tr>
+
+<tr>
+<td class="org-left">Security</td>
+<td class="org-left">Confidentiality of messages, Authentication</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org59f6281" class="outline-3">
+<h3 id="org59f6281"><span class="section-number-3">1.5</span> Connection-oriented vs Connectionless Services</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Connection-oriented:
+<ul class="org-ul">
+<li>A connection is built before transmission occur</li>
+<li>e.g. TCP, seems that all packets go to the same path, but not really.</li>
+</ul></li>
+<li>Connectionless:
+<ul class="org-ul">
+<li>No connection is setup e.g. postal service</li>
+<li>Each packet must carry destination address, and each packet may take different path</li>
+<li>e.g. UDP</li>
+</ul></li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Connection Type</th>
+<th scope="col" class="org-left">Service</th>
+<th scope="col" class="org-left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Connection-</td>
+<td class="org-left">Reliable message stream</td>
+<td class="org-left">Sequence of pages</td>
+</tr>
+
+<tr>
+<td class="org-left">Oriented</td>
+<td class="org-left">Reliable byte stream</td>
+<td class="org-left">Remote Login</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Unreliable connection</td>
+<td class="org-left">Digitzed voice</td>
+</tr>
+
+<tr>
+<td class="org-left">Connectionless</td>
+<td class="org-left">Unreliable datagram</td>
+<td class="org-left">Electronic junk mail</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Acknowledged datagram</td>
+<td class="org-left">Registered mail</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Request-reply</td>
+<td class="org-left">Database query</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgf9295b2" class="outline-3">
+<h3 id="orgf9295b2"><span class="section-number-3">1.6</span> Service Primitives</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Five service primitives for implementing a simple connection-oriented service.</li>
+<li>TCP socket programming has these functions</li>
+<li>Two "blocks"</li>
+<li>Connectionless service use only SEND</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Primitive</th>
+<th scope="col" class="org-left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">LISTEN</td>
+<td class="org-left">Block waiting for an incoming connection</td>
+</tr>
+
+<tr>
+<td class="org-left">CONNECT</td>
+<td class="org-left">Establish a connection with a waiting peer</td>
+</tr>
+
+<tr>
+<td class="org-left">RECEIVE</td>
+<td class="org-left">Block waiting for an incoming message</td>
+</tr>
+
+<tr>
+<td class="org-left">SEND</td>
+<td class="org-left">Send a message to the peer</td>
+</tr>
+
+<tr>
+<td class="org-left">DISCONNECT</td>
+<td class="org-left">Terminate a connection</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org783d1cf" class="outline-3">
+<h3 id="org783d1cf"><span class="section-number-3">1.7</span> Service to Protocol Relationship</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>A service is a set of primitives that a layer provides to the layer above. Says nothing about implementation</li>
+<li>A protocol is a set of rules governing the format and meaning of the packets.</li>
+<li>Analogy: Abstract Data Type is to Implementation as Service is to Protocol</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4d98a88" class="outline-3">
+<h3 id="org4d98a88"><span class="section-number-3">1.8</span> Reference Models</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li>OSI Reference Model</li>
+<li>TCP/IP Reference Model</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0b49a3b" class="outline-3">
+<h3 id="org0b49a3b"><span class="section-number-3">1.9</span> OSI Reference Model</h3>
+<div class="outline-text-3" id="text-1-9">
+
+<div class="figure">
+<p><img src="img/cs538/osi_model.png" alt="osi_model.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>From bottom up:
+<dl class="org-dl">
+<dt>Physical Layer</dt><dd>Transmitting raw bits over physical medium</dd>
+<dt>Data Link Layer</dt><dd>Break messages into data frames and transmit them sequentially.
+<ul class="org-ul">
+<li>Error Control: Ack</li>
+<li>Flow Control: traffic regulation, buffer size</li>
+<li>For broadcast networks, how to control access to the shared medium: Medium Access Control sublayer.</li>
+</ul></dd>
+</dl></li>
+<li id="Session Layer">Allows users on different machines to establish "sessions" between them</li>
+<li id="Presentation Layer">Syntax and semantics of the information transmitted.</li>
+<li id="Application Layer">Applications above such as HTTP, WWW, FTP, Email</li>
+</ul>
+</div>
+<div id="outline-container-org41b2d9c" class="outline-4">
+<h4 id="org41b2d9c"><span class="section-number-4">1.9.1</span> In Summary</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<ul class="org-ul">
+<li>OSI is a principled international standard with seven layers:</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb90e0b1" class="outline-3">
+<h3 id="orgb90e0b1"><span class="section-number-3">1.10</span> TCP/IP Reference Model</h3>
+<div class="outline-text-3" id="text-1-10">
+<ul class="org-ul">
+<li>Derives from ARPANET</li>
+<li>Doesn't use Presentation or Session layer from OSI Reference Model</li>
+<li>From 7 layers to 5.</li>
+</ul>
+</div>
+<div id="outline-container-org83c681f" class="outline-4">
+<h4 id="org83c681f"><span class="section-number-4">1.10.1</span> Layers</h4>
+<div class="outline-text-4" id="text-1-10-1">
+<ul class="org-ul">
+<li>Internet Layer
+<ul class="org-ul">
+<li>Internet Protocol (IP)</li>
+<li>Connectionless service</li>
+<li>Routing &amp; Congestion control</li>
+</ul></li>
+<li>Transport Layer
+<ul class="org-ul">
+<li>End-to-end protocols</li>
+<li>Transmission Control Protocol (TCP): reliable connection-oriented protocol</li>
+<li>User Datagram Protocol (UDP): unreliable, connectionless protocol</li>
+</ul></li>
+<li>Application Layer
+<ul class="org-ul">
+<li>TELNET, FTP, SMTP, etc.</li>
+</ul></li>
+<li>Host-to-Network Layer
+<ul class="org-ul">
+<li>Not defined in TCP/IP Model</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbec3927" class="outline-4">
+<h4 id="orgbec3927"><span class="section-number-4">1.10.2</span> Protocols in Different Layers</h4>
+<div class="outline-text-4" id="text-1-10-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Layer</th>
+<th scope="col" class="org-left">Protocols</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Application</td>
+<td class="org-left">HTTP, SMTP, RTP, DNS</td>
+</tr>
+
+<tr>
+<td class="org-left">Transport</td>
+<td class="org-left">TCP, UDP</td>
+</tr>
+
+<tr>
+<td class="org-left">Internet</td>
+<td class="org-left">IP, ICMP</td>
+</tr>
+
+<tr>
+<td class="org-left">Link</td>
+<td class="org-left">DSL, SONET, 802.11, Ethernet</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Example of differences in application layer protocols:
+Real-time Transport Protocol (RTP) may not need to retransmit lost packets, because in a real-time scenario like voip, these packets are not needed if they are late.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4746864" class="outline-3">
+<h3 id="org4746864"><span class="section-number-3">1.11</span> OSI Model vs TCP/IP Model</h3>
+<div class="outline-text-3" id="text-1-11">
+<ul class="org-ul">
+<li>OSI model distinguishes
+<ul class="org-ul">
+<li>Services</li>
+<li>Interfaces</li>
+<li>Protocols</li>
+<li>OOP concept: method, attributes, implementations</li>
+</ul></li>
+<li>OSI was created before the protocols were defined.</li>
+<li>TCP/IP was created after protocols were defined</li>
+<li>OSI was very influential and had clear goals/concepts, but was bogged down by complexity and politics.</li>
+<li>TCP/IP had very successful protocols, but a weak model derived later.</li>
+</ul>
+</div>
+<div id="outline-container-orgb170328" class="outline-4">
+<h4 id="orgb170328"><span class="section-number-4">1.11.1</span> Why OSI failed</h4>
+<div class="outline-text-4" id="text-1-11-1">
+<ul class="org-ul">
+<li>Bad timing</li>
+<li>Bad technology: many layers, complex and redundant</li>
+<li>Bad implementation</li>
+<li>Politics</li>
+<li>See "two elephants"</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb344f10" class="outline-3">
+<h3 id="orgb344f10"><span class="section-number-3">1.12</span> A Critique of the TCP/IP Reference Model</h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+Problems:
+</p>
+<ul class="org-ul">
+<li>Service, interface, and protocol are not distinguished</li>
+<li>Not a general model</li>
+<li>Host-to-network "layer" not really a layer</li>
+<li>No mention of physical and data link layers</li>
+<li>Minor protocols are deeply entrenched and hard to replace</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0e76da3" class="outline-3">
+<h3 id="org0e76da3"><span class="section-number-3">1.13</span> Internet: The ARPANET</h3>
+<div class="outline-text-3" id="text-1-13">
+<ul class="org-ul">
+<li>From ARPANET to Internet
+<ul class="org-ul">
+<li>ARPANET is a research network sponsored by DoD</li>
+<li>later connected hundreds of universities and government installations using leased telephone lines</li>
+<li>Had trouble when satellite and radio networks were added</li>
+<li>TCP/IP begins in 70s</li>
+<li>TCP/IP was built into the linux kernel</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org53e6f79" class="outline-4">
+<h4 id="org53e6f79"><span class="section-number-4">1.13.1</span> Architecture</h4>
+<div class="outline-text-4" id="text-1-13-1">
+<ul class="org-ul">
+<li>First Dialup reuse phone lines</li>
+<li>DSL (Digital Subscriber Line) improved on this by sending digital transmission over these lines.</li>
+<li>These require DSLAM (Digital Subscriber Line Access Multiplexer) which convert between digital and analog signal</li>
+<li>ISP networks may be regional, national, or international</li>
+<li>Tier 1 ISPs are the largest of these providers. They are the backbone of the internet.</li>
+<li>IXP (Internet eXchange Point) these are points where ISPs connect their networks to exchange traffic</li>
+<li>Within each network routers switch packets</li>
+<li>Between networks, traffic exchange is set by business agreements.</li>
+<li>Customers connect to the network by many means:
+<ul class="org-ul">
+<li>Cable, DSL, Fiber, 3G/4G, Dialup</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37c5b67" class="outline-4">
+<h4 id="org37c5b67"><span class="section-number-4">1.13.2</span> Cellular Phone Systems</h4>
+<div class="outline-text-4" id="text-1-13-2">
+<ul class="org-ul">
+<li>1st Generation [AMPS (Advanced Mobile Phone System)]: limited channels, analog</li>
+<li>2nd Generation [GSM (Global System for Mobile communications), DAMPS, CDMA]: Digital
+<ul class="org-ul">
+<li>DAMPS created to be backwards compatible with AMPS</li>
+</ul></li>
+<li>3rd Generation [UMTS (Universal Mobile Telecommunications System), also called WCDMA (Wideband Code Division Multiple Access)]: Digital, both voice and data, up to 14 Mbps down, 6 Mbps up.</li>
+<li>4th Generation: integrated</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0891d0d" class="outline-4">
+<h4 id="org0891d0d"><span class="section-number-4">1.13.3</span> 3G Mobile Phone Networks</h4>
+<div class="outline-text-4" id="text-1-13-3">
+<ul class="org-ul">
+<li>3G Network is based on spatial cells. Each cell services mobile devices via a base station.</li>
+<li>As mobile devices move, base stations hand them off from one cell to the next</li>
+<li>UMTS Network:
+<ul class="org-ul">
+<li>Phone connects to base station (node B)</li>
+<li>Base stations connect to Radio Network Controller. Here traffic is divided between data and voice signals.</li>
+</ul></li>
+<li>Previously this was a <b>hard handover</b>, where a cellphone would stop connection with one tower and begin connection with another. Today, we have <b>soft handover</b> because cellphones have multiple antenna and make begin connection to next tower before terminating previous connection</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc455188" class="outline-4">
+<h4 id="orgc455188"><span class="section-number-4">1.13.4</span> Wireless LAN</h4>
+<div class="outline-text-4" id="text-1-13-4">
+<ul class="org-ul">
+<li>Signals in the 2.4 GHz ISM band vary in strength due to many effects, such as multi-path fading due to reflections. As such, required complex transmission schemes e.g. OFDM</li>
+<li>CSMA (Carrier Sense Multiple Access) designs are used because the range of a single radio may not cover the entire system, and multiple radios may incompletely overlap or interfere.</li>
+<li>But instead, most WLANs simply are not Ad Hoc networks, but instead make use of an Access Point.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org945dd46" class="outline-3">
+<h3 id="org945dd46"><span class="section-number-3">1.14</span> RFID and Sensor Networks</h3>
+<div class="outline-text-3" id="text-1-14">
+<ul class="org-ul">
+<li>Passive networks in everyday objects:
+<ul class="org-ul">
+<li>Tags are placed on objects</li>
+<li>Readers send signals that the tags reflect to communicate</li>
+<li id="UHF RFID (Ultra-high Frequency)">most common, 902-928 MHz band, distance of several meters</li>
+<li id="HF RFID (High Frequency)">13.56 MHz, used in passports, credit cards, books, etc.</li>
+</ul></li>
+<li>Active RFID also occurs.</li>
+<li>Sensor networks spread small devices over an area. These devices send sensor data to collectors.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfca1f51" class="outline-3">
+<h3 id="orgfca1f51"><span class="section-number-3">1.15</span> Network Standardization</h3>
+<div class="outline-text-3" id="text-1-15">
+<ul class="org-ul">
+<li>ITU (International Telecommunication Union), an agency of the UN</li>
+<li>Additionally, we have:
+<ul class="org-ul">
+<li>ISO (International Standards Organization)</li>
+<li>NIST (National Institute of Standards and Technology)</li>
+<li>IEEE (Institute of Electrical and Electronics Engineers)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45408e1" class="outline-3">
+<h3 id="org45408e1"><span class="section-number-3">1.16</span> Network Standardization</h3>
+<div class="outline-text-3" id="text-1-16">
+<ul class="org-ul">
+<li>When the ARPANET was set up, DoD created an informal committee to oversee it. Called the IAB (Internet Activities Board)</li>
+<li>Later changed to Internet Architecture Board</li>
+<li>Published a series of technical reports called RFCs (request for comments)</li>
+<li>Then, in 1989, the IRTF (Internet Research Task Force) and IETF (Internet Engineering Task Force).</li>
+<li>IRTF concentrates on long-term research while IETF focuses on short-term engineering issues</li>
+<li>Later, the Internet Society was created. It is governed by elected trustees who appoint the IAB's members.</li>
+<li>RFCs can become standards, but a process must be followed. To advance to the Draft Standard stage, a working implementation must have been rigorously tested by at least two independent sites for at least 4 months.</li>
+<li>If the IAB is convinced, it can declare the RFC to be an Internet Standard.</li>
+<li>Standards define what is needed for inter-operability</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Body</th>
+<th scope="col" class="org-left">Area</th>
+<th scope="col" class="org-left">Example Standards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ITU</td>
+<td class="org-left">Telecommunications</td>
+<td class="org-left">G.992, ADSL</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">H.264, MPEG4</td>
+</tr>
+
+<tr>
+<td class="org-left">IEEE</td>
+<td class="org-left">Communications</td>
+<td class="org-left">802.3, Ethernet</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">802.11, WiFi</td>
+</tr>
+
+<tr>
+<td class="org-left">IETF</td>
+<td class="org-left">Internet</td>
+<td class="org-left">RFC 2616, HTTP/1.1</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">RFC 1034/1035, DNS</td>
+</tr>
+
+<tr>
+<td class="org-left">W3C</td>
+<td class="org-left">Web</td>
+<td class="org-left">HTML5 Standard</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">CSS Standard</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org4e9a7bf" class="outline-2">
+<h2 id="org4e9a7bf"><span class="section-number-2">2</span> Chapter 2: The Physical Layer</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5b83ae4" class="outline-3">
+<h3 id="org5b83ae4"><span class="section-number-3">2.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>It is the foundation on which other layers are built.</li>
+<li>Key problem is to send digital message (bits) using only analog signals (modulation)</li>
+<li>Information transmitted on wires by varying physical properties such as voltage/current.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb36431" class="outline-3">
+<h3 id="orgfb36431"><span class="section-number-3">2.2</span> Fourier Analysis</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>In early 19th century, Fourier proved that any reasonably behaved periodic function g(t) with period T,</li>
+</ul>
+\begin{equation}
+g(t)=\frac{1}{2}c+ \sum^\inf_{n=1}a_nsin(2\pi n ft) + \sum^\inf_{n=1}b_ncos(2\pi nft)
+\end{equation}
+<ul class="org-ul">
+<li>where f = 1/T, the fundamental frequency</li>
+<li>a<sub>n</sub> &amp; b<sub>n</sub>, amplitudes of nth harmonics</li>
+<li>c, constant</li>
+<li>Imagining that a data signal with a finite duration is periodic (repeats indefinitely), we can analyze signals using Fourier techniques.</li>
+<li>See slides for Fourier Analysis of an example signal.</li>
+<li>Fourier Analysis can tell us about the amplitude of our signal at different harmonic numbers.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1707f3e" class="outline-3">
+<h3 id="org1707f3e"><span class="section-number-3">2.3</span> Bandwidth-Limited Signals</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>Transmission lose some power.</li>
+<li>But all Fourier components are not equally diminished. Higher frequency components lose more power.</li>
+<li>This introduces distortion.</li>
+<li>Usually, in a wire, amplitudes are transmitted mostly undiminished. But frequencies above a cutoff frequency are diminished.</li>
+<li>The width of the frequency range transmitted without strong attenuation is called the <b>bandwidth</b></li>
+<li>In practice, the cutoff is somewhat arbitrary, quoted as the frequency at which received power has fallen by half.</li>
+<li>The bandwidth is a physical property of the specific transmission medium.</li>
+<li>Filters are often used to further limit the bandwidth of a signal.</li>
+<li>802.11 wireless channels use up to roughly 20 MHz, so the 802.11 radios filter the signal bandwidth to this size.</li>
+<li>Another example, television channels occupy 6 MHz each. This filtering lets more signals share a given region of spectrum which improves the overall efficiency of the system.</li>
+<li>It means that the frequency range for some signals will not start at 0 (passband).</li>
+<li>Signals that run from 0 up to a maximum frequency are called <b>baseband</b> signals.</li>
+<li>Signals that are shifted to occupy a higher range of frequencies (as is the case for all wireless transmissions) are called <b>passband</b> signals.</li>
+</ul>
+
+<div class="figure">
+<p><img src="img/cs538/bandwidth-limited-signal.png" alt="bandwidth-limited-signal.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Having less bandwidth (fewer harmonics) degrades the signal</li>
+<li>An ordinary telephone line, often called a <b>voice-grade line</b> has an artificially introduced cutoff frequency just above 3000 Hz.</li>
+<li>This means that the number of the highest harmonic passed through is roughly 3000/(L/8) or 24000/L</li>
+<li>(L/8 because 8-bits in a byte)</li>
+</ul>
+
+<div class="figure">
+<p><img src="img/cs538/bandwidth-table.png" alt="bandwidth-table.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>The table above shows that we can increase transmission rate, by decreasing number of harmonics sent, but this degrades our signal. Eventually it will be incomprehensible. We need at least ~8 harmonics.</li>
+<li>In fact, we can achieve higher data rates with coding schemes that make use of several voltage levels.</li>
+<li>Just note the ambiguity between analog bandwidth (frequency) and digital bandwidth (data rate)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf43504" class="outline-3">
+<h3 id="orgbf43504"><span class="section-number-3">2.4</span> The Maximum Data Rate of a Channel</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>In 1924, an AT&amp;T engineer, Henry Nyquist, realized that even a perfect channel has a finite transmission capacity.</li>
+<li>In 1948, Claude Shannon carried the work further and extended it to the case of a channel subject to random noise. (most important paper in information theory)</li>
+<li><b>low-pass filter</b> is a filter that attenuates signals with frequencies higher than a cutoff</li>
+<li><b>sampling</b> is the reduction of a continuous signal to a discrete signal.</li>
+<li>Nyquist showed that a signal run through a low-pass filter of bandwidth B, the signal can be reconstructed by making 2B samples per second.</li>
+<li><b>Nyquist's theorem</b>
+<ul class="org-ul">
+<li>maximum data rate = 2B log<sub>2</sub> V bits/sec</li>
+<li>where signal consists of V discrete levels</li>
+</ul></li>
+<li>SNR (Signal-to-Noise Ratio): S/N, but normally 10 log<sub>10</sub> S/N
+<ul class="org-ul">
+<li>for signal power S and noise power N</li>
+<li>this scale is used due to the high range of possible S/N ratios</li>
+</ul></li>
+<li>Units of log: decibels (dB)</li>
+<li>An S/N ratio of 10 is 10 dB, ratio of 100 is 20 dB, ratio of 1000 is 30, etc.</li>
+<li>Shannon's maximum data rate or <b>capacity</b> with Bandwidth B &amp; S/N:
+<ul class="org-ul">
+<li>maximum bits/sec = B log<sub>2</sub> (1 + S/N)</li>
+</ul></li>
+<li>Example: ADSL with 1 MHz and SNR=40dB we get 13 Mbps. In practice, ADSL is specified up to 12 Mbps.</li>
+<li>digital repeaters can be used to amplify signal and improve SNR.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga314932" class="outline-3">
+<h3 id="orga314932"><span class="section-number-3">2.5</span> Guided Transmission Data</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Magnetic Media</li>
+<li>Twisted Pair</li>
+<li>Coaxial Cable</li>
+<li>Power Lines</li>
+<li>Fiber Optics</li>
+</ul>
+</div>
+<div id="outline-container-org2568720" class="outline-4">
+<h4 id="org2568720"><span class="section-number-4">2.5.1</span> Magnetic Media</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<ul class="org-ul">
+<li>If high bandwidth + cost per bit is the key factor, it can be cost effective to ship hard disks.</li>
+<li>"Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway"</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org81686df" class="outline-4">
+<h4 id="org81686df"><span class="section-number-4">2.5.2</span> Twisted Pair</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<ul class="org-ul">
+<li>The oldest and most common media. A twisted pair of insulated copper wires.</li>
+<li>Category 3 UTP (old)</li>
+<li>Category 5 UTP (new)</li>
+<li id="UTP">Unshielded Twisted Pair</li>
+<li>Category 5 UTP has 4 twisted pairs. 100 Mbps Ethernet uses 2 for each direction.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9e35577" class="outline-4">
+<h4 id="org9e35577"><span class="section-number-4">2.5.3</span> Link Terminology</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<dl class="org-dl">
+<dt>Full-duplex link</dt><dd>transmission in both directions simultaneously</dd>
+<dt>Half-duplex link</dt><dd>both directions, but not at the same time</dd>
+<dt>Simplex link</dt><dd>Fixed direction; uncommon</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgcf17764" class="outline-4">
+<h4 id="orgcf17764"><span class="section-number-4">2.5.4</span> Coaxial Cable</h4>
+<div class="outline-text-4" id="text-2-5-4">
+<ul class="org-ul">
+<li>Longer distances at better speeds and less noise than twisted pairs</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd2c4c90" class="outline-4">
+<h4 id="orgd2c4c90"><span class="section-number-4">2.5.5</span> Power Lines</h4>
+<div class="outline-text-4" id="text-2-5-5">
+<ul class="org-ul">
+<li>Convenient, but in general does a horrible job.</li>
+<li>An older idea, used by electricity companies for low-rate communication such as remote metering as well as in the home to control devices.</li>
+<li>In more recent years, high-rate communication over these lines both inside the home as LAN and outside the home for broadband access.</li>
+<li>Problems:
+<ul class="org-ul">
+<li>Electrical properties (wiring) vary from home to home and change as in-home power usage changes (e.g. turning on a drier or space heater)</li>
+<li>Additionally transient currents (appliances turned on and off) create electrical noise</li>
+<li>Despite these difficulties, it is practical to send at least 100 Mbps over typical household electrical wiring using the right communication schemes.</li>
+</ul></li>
+<li>Electrical signals at 50-60 Hz and attenuates at higher frequency for high-rate data communication.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org59571d0" class="outline-4">
+<h4 id="org59571d0"><span class="section-number-4">2.5.6</span> Fiber Optics</h4>
+<div class="outline-text-4" id="text-2-5-6">
+<ul class="org-ul">
+<li>Increase in computation speed and communication speeds have historically been relatively similar.</li>
+<li>Both around 16x per decade.</li>
+<li>CPUs are approaching speed limitations</li>
+<li>Fiber can be very fast, but is expensive.</li>
+<li>Key for fiber, is to have reflection angle such that all light is reflected and none refracted</li>
+<li id="Multimode fiber">many different rays bouncing around at different angle</li>
+<li>Single-mode fiber
+<ul class="org-ul">
+<li>Fiber's diameter is reduced to be very short. Light propagates like a straight line. More expensive, but more effective (longer travel distance)</li>
+</ul></li>
+<li>Fiber has enormous bandwidth (THz) and tiny signal loss</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgffb6aca" class="outline-4">
+<h4 id="orgffb6aca"><span class="section-number-4">2.5.7</span> Fiber Cables</h4>
+<div class="outline-text-4" id="text-2-5-7">
+<ul class="org-ul">
+<li>Single fiber
+<ul class="org-ul">
+<li>has core so narrow (10 microns) light can not bounce around</li>
+<li>Used with lasers for long distances</li>
+</ul></li>
+<li>Multiple fiber
+<ul class="org-ul">
+<li>Light can bounce (50 micron core)</li>
+<li>Used with LEDs for cheaper, shorter distance links</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc369d8a" class="outline-3">
+<h3 id="orgc369d8a"><span class="section-number-3">2.6</span> Electromagnetic Spectrum</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>To manage interference, use of spectrum is regulated and licensed e.g. sold at auction.</li>
+<li>In addition, there are also unlicensed (ISM) bands. Free for use at lower power.
+<ul class="org-ul">
+<li>Used for networking; WiFi, Bluetooth, etc.</li>
+</ul></li>
+<li id="FHSS (frequency hopping spread spectrum_">hops from frequency to frequency hundreds of times per second. Popular for military as its hard to detect and jam</li>
+<li id="CDMA (code division multiple access)">uses different codes for multi-plexing</li>
+<li id="DSSS (direct sequence spread spectrum)">uses a code sequence to spread the data signal over a wider frequency band. Used to let multiple signals share same frequency band</li>
+<li id="UWB (ultra-wideband)">sends a series of rapid pulses, varying their positions to communication information.</li>
+</ul>
+</div>
+<div id="outline-container-org44614c9" class="outline-4">
+<h4 id="org44614c9"><span class="section-number-4">2.6.1</span> Radio Transmission</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<ul class="org-ul">
+<li>In the VLF, LF, and MF bands, radio waves follow the curvature of the earth.</li>
+<li>In the HF band, they bounce off the ionosphere.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd49055f" class="outline-4">
+<h4 id="orgd49055f"><span class="section-number-4">2.6.2</span> Microwave Transmission</h4>
+<div class="outline-text-4" id="text-2-6-2">
+<ul class="org-ul">
+<li>Above 100 Mhz, waves travel in nearly straight lines.</li>
+<li>Satellite TV dish must be accurately aligned.</li>
+<li>MCI: Microwave Communications Inc.
+<ul class="org-ul">
+<li>Bought small plots every 50km for towers. Later acquired by verizon</li>
+</ul></li>
+<li>Microwave does not pass through buildings well.</li>
+<li>Increased demand has lead to use higher and higher frequencies</li>
+<li>Bands up to 10 GHz are now in routine use. Above 4 GHz absorption by rain/humidity becomes a problem</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc889074" class="outline-4">
+<h4 id="orgc889074"><span class="section-number-4">2.6.3</span> Infrared Transmission</h4>
+<div class="outline-text-4" id="text-2-6-3">
+<ul class="org-ul">
+<li>TV remote</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc809d0d" class="outline-3">
+<h3 id="orgc809d0d"><span class="section-number-3">2.7</span> Politics of the Electromagnetic Spectrum</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>US has FCC (Federal Communications Commission)</li>
+<li>Three algorithms:
+<ul class="org-ul">
+<li>Beauty Contest
+<ul class="org-ul">
+<li>Each carrier argues why its proposal serves public interest</li>
+<li>Government officials decide</li>
+<li>Leads to bribery and corruption</li>
+</ul></li>
+<li>Lottery 
+<ul class="org-ul">
+<li>problem: companies with no interest enter the lottery then resell</li>
+</ul></li>
+<li>Auction
+<ul class="org-ul">
+<li>create monopolistic environment</li>
+</ul></li>
+</ul></li>
+<li>The ISM (industrial, scientific, and medical) bands
+<ul class="org-ul">
+<li>Used by garage door openers, cordless phones, bluetooth, wifi, etc.</li>
+<li>FCC mandates that devices in this band limit their transmit power and use other techniques to spread their signals over a range of frequencies</li>
+</ul></li>
+<li>FCC 2009 allows unlicensed use of white spaces around 700 MHz.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09e3056" class="outline-3">
+<h3 id="org09e3056"><span class="section-number-3">2.8</span> Digital Modulation and Multiplexing</h3>
+<div class="outline-text-3" id="text-2-8">
+<dl class="org-dl">
+<dt>Digital modulation</dt><dd>converting between bits and signals</dd>
+<dt>Baseband transmission</dt><dd>signals occupy frequencies from zero up to a max
+<ul class="org-ul">
+<li>particularly for non-optical wired channels</li>
+</ul></dd>
+<dt>Passband transmission</dt><dd>signals occupy a band of frequencies around frequency of carrier signal
+<ul class="org-ul">
+<li>used by most other types of channels</li>
+</ul></dd>
+</dl>
+</div>
+<div id="outline-container-org0058f82" class="outline-4">
+<h4 id="org0058f82"><span class="section-number-4">2.8.1</span> Baseband transmission</h4>
+<div class="outline-text-4" id="text-2-8-1">
+<ul class="org-ul">
+<li>NRZ (Non-return-to-zero) scheme
+<ul class="org-ul">
+<li>Use a positive voltage to represent a 1 and a negative voltage to represent 0</li>
+<li>Sense there is no return to 0, precise timing is requires to decode streams of repeating bits e.g. was the stream 5 consecutive 0s or 4 consecutive?</li>
+</ul></li>
+<li>Need bandwidth of at least B/2 Hz when the bit rate is B bits/sec</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org73b2f28" class="outline-4">
+<h4 id="org73b2f28"><span class="section-number-4">2.8.2</span> Bandwidth Efficiency</h4>
+<div class="outline-text-4" id="text-2-8-2">
+<ul class="org-ul">
+<li>In the case of limited bandwidth, it is possible to achieve better data rates by using a coding scheme with more than two signaling levels.</li>
+<li>For example, by using four voltages we can send 2 bits at once as a single symbol (if the receiver can accurately distinguish our four levels)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaadf63f" class="outline-4">
+<h4 id="orgaadf63f"><span class="section-number-4">2.8.3</span> Clock Recovery</h4>
+<div class="outline-text-4" id="text-2-8-3">
+<ul class="org-ul">
+<li>As we've mentioned, it is difficult to discern the multiplicity of repeated symbols in a NRZ scheme.</li>
+<li>One scheme to remedy this, is to XOR the data signal and clock signal together. This is called Manchester encoding</li>
+<li>Unfortunately, this type of encoding requires twice as much bandwidth as a simple NRZ scheme.</li>
+<li>Another strategy is to represent 1 via a transition and 0 via no transition. This is used in USB
+<ul class="org-ul">
+<li>This is called NRZI (Non-return-to-zero Inverted)</li>
+<li>This solves our problem when transmitting many repeated 1s</li>
+<li>It does not help with strings of 0s</li>
+<li>Older digital telephone lines requires no more than 15 consecutive 0s</li>
+</ul></li>
+<li>Another solution, is to break up strings 0s into small groups e.g. 4B/5B</li>
+<li id="4B/5B">every 5 bits is mapped into a particular 5-bit pattern. This guarantees no more than three consecutive 0s
+<ul class="org-ul">
+<li>This adds better than 25% overhead (better than 100% overhead from manchester)</li>
+</ul></li>
+<li>Yet another approach is <b>Scrambling</b>
+<ul class="org-ul">
+<li>Here we XOR our data with a pseudorandom sequence</li>
+<li>Adds no bandwidth or time overhead (XOR may be implemented very efficiently)</li>
+<li>It does not guarantee no long runs of repeated bits, but it makes it more unlikely</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org959822e" class="outline-4">
+<h4 id="org959822e"><span class="section-number-4">2.8.4</span> Balanced Signal</h4>
+<div class="outline-text-4" id="text-2-8-4">
+<ul class="org-ul">
+<li>A <b>balanced signal</b> has roughly same positive and negative voltage even over short period of time.</li>
+<li>This helps with clock recovery</li>
+<li id="Bipolar Encoding">use two different voltage levels (e.g. +1V and -1V) to represent 1 with 0V representing 0.
+<ul class="org-ul">
+<li>Sending a 1 alternates between +1V and -1V guaranteeing a balanced signal</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9d8e4fa" class="outline-3">
+<h3 id="org9d8e4fa"><span class="section-number-3">2.9</span> Passband Transmission</h3>
+<div class="outline-text-3" id="text-2-9">
+<dl class="org-dl">
+<dt>Passband tranmission</dt><dd>signal occupies a band of frequencies around the frequency of the carrier signal.</dd>
+<dt>ASK (Amplitude Shift Keying)</dt><dd>two different amplitudes are used to represent 0 and 1. e.g. an amplitude of 0 represents 0 while a nonzero amplitude encodes a 1</dd>
+</dl>
+
+<div class="figure">
+<p><img src="img/cs538/ask_signal.png" alt="ask_signal.png" />
+</p>
+</div>
+<dl class="org-dl">
+<dt>FSK (Frequency Shift Keying)</dt><dd>two or more different tones/frequencies are used</dd>
+</dl>
+
+<div class="figure">
+<p><img src="img/cs538/fsk_signal.png" alt="fsk_signal.png" />
+</p>
+</div>
+<dl class="org-dl">
+<dt>PSK (Phase Shift Keying)</dt><dd>changing a number phases (i.e. shifting some degrees) to represent each symbol</dd>
+<dt>BPSK (Binary Phase Shift Keying)</dt><dd>type of PSK where the the wave is shift 0 or 180 degrees to represent 0 and 1</dd>
+<dt>QPSK (Quadrature Phase Shift Keying)</dt><dd>type of PSK that uses four unique shifts to transmit 2 bits of information per symbol.</dd>
+<dt>(no term)</dt><dd>We can combine these schemes and use more levels to transmit more bits per symbol.
+<ul class="org-ul">
+<li>However, frequency and phase can not be changed in unison since they are related</li>
+<li>Typically, <b>amplitude and phase</b> are modulate in combination</li>
+<li>This gives rise to QAM schemes (Quadrature Amplitude Modulation)</li>
+</ul></dd>
+</dl>
+
+<div class="figure">
+<p><img src="img/cs538/qam_signal.png" alt="qam_signal.png" /> 
+</p>
+</div>
+<ul class="org-ul">
+<li>For example in cable internet, it is common to use QPSK for upstream and QAM-64 for downstream.</li>
+<li>How do we assign bits to symbols in the constellation?
+<ul class="org-ul">
+<li>If we used a symbol counting scheme, it would be possible for a small error to result in all bits being wrong.</li>
+<li>Instead we use a <b>gray-coding</b> scheme, s.t. small errors will cause a minimum number of bits to be transmitted incorrectly.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9fad734" class="outline-3">
+<h3 id="org9fad734"><span class="section-number-3">2.10</span> Frequency Division Multiplexing</h3>
+<div class="outline-text-3" id="text-2-10">
+<dl class="org-dl">
+<dt>FDM (Frequency Division Multiplexing)</dt><dd>Frequency spectrum is divided into frequency bands, with each user having "possession" of a certain band
+<ul class="org-ul">
+<li>e.g. AM radio/FM radio</li>
+<li>Filters do not have hard edges in practice so there are guard bands between channels</li>
+<li>Also <b>OFDM</b> which does not use guard bands which allows for more channels in the same bandwidth.
+<ul class="org-ul">
+<li>Signals are overlapping, but sampled from minima of surrounding waves (see diagram)</li>
+<li><img src="img/cs538/ofdm_signal.png" alt="ofdm_signal.png" /></li>
+<li>Used in 802.11, 4G, ADSL</li>
+</ul></li>
+</ul></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org9f87988" class="outline-3">
+<h3 id="org9f87988"><span class="section-number-3">2.11</span> Time Division Multiplexing</h3>
+<div class="outline-text-3" id="text-2-11">
+<dl class="org-dl">
+<dt>TDM (Time Division Multiplexing)</dt><dd>Users take turns in a round-robin fashion</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org7c52ca1" class="outline-3">
+<h3 id="org7c52ca1"><span class="section-number-3">2.12</span> Code Division Multiplexing</h3>
+<div class="outline-text-3" id="text-2-12">
+<dl class="org-dl">
+<dt>CDM (Code Division Multiplexing)</dt><dd>A form of <b>spread spectrum</b> communication in which a narrowband signal is spread out over a wider frequency band</dd>
+<dt>(no term)</dt><dd>same as CDMA</dd>
+<dt>(no term)</dt><dd>tolerant of interference</dd>
+<dt>(no term)</dt><dd>Essentially, different channels speak in own "language" and discard all other "languages"</dd>
+<dt>(no term)</dt><dd>Each bit time is divided into short intervals called <b>chips</b></dd>
+<dt>(no term)</dt><dd>Each station is assigned a unique m-bit code called a chip sequence.
+<ul class="org-ul">
+<li>Send 1 by sending chip sequence</li>
+<li>Send 0 by sending binary complement of chip sequence</li>
+</ul></dd>
+<dt>(no term)</dt><dd>E.g. 1 MHz for 100 stations
+<ul class="org-ul">
+<li>FDM 
+<ul class="org-ul">
+<li>each 10 kHz -&gt; 10 kbps</li>
+</ul></li>
+<li>CDMA
+<ul class="org-ul">
+<li>Each station use 1 MHz</li>
+<li>m=100 each station sends 1 Mbps / 100 = 10 kbps</li>
+<li>In fact, we can use m&lt;100 with 100 channels.</li>
+<li>See slides for illustration and explanation of how channels are combined and recovered</li>
+</ul></li>
+</ul></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgcc16463" class="outline-3">
+<h3 id="orgcc16463"><span class="section-number-3">2.13</span> Public Switched Telephone Network</h3>
+<div class="outline-text-3" id="text-2-13">
+</div>
+<div id="outline-container-org5bdae10" class="outline-4">
+<h4 id="org5bdae10"><span class="section-number-4">2.13.1</span> Major Components of the Telephone System</h4>
+<div class="outline-text-4" id="text-2-13-1">
+<ul class="org-ul">
+<li>Local loops
+<ul class="org-ul">
+<li>Analog twisted pairs going to houses and businesses</li>
+<li>Only used at ends of network (near leaf nodes)</li>
+</ul></li>
+<li>Trunks
+<ul class="org-ul">
+<li>Digital fiber optics connecting the switching offices</li>
+</ul></li>
+<li>Switching offices 
+<ul class="org-ul">
+<li>Where calls are moved from one trunk to another</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org332304b" class="outline-4">
+<h4 id="org332304b"><span class="section-number-4">2.13.2</span> Politics of Telephones</h4>
+<div class="outline-text-4" id="text-2-13-2">
+<p>
+<b>see slides for full details</b>
+</p>
+<ul class="org-ul">
+<li>Prior to 1984, Bell system did both local and long distance service in US</li>
+<li>Jan 1984 AT&amp;T lost lawsuit to US govt and was broken into AT&amp;T long lines and 23 BOCs (bell operating companies)</li>
+<li>US was divided into 164 LATAs (Local Access and Transport Areas) 
+<ul class="org-ul">
+<li>approximately same as area code?</li>
+</ul></li>
+<li>Within a LATA, a LEC (Local Exchange Carrier) had a monopoly, usually BOCs</li>
+<li>Inter-LATA traffic (like long distance call) was handled by an IXC (Inter-exchange Carrier) like AT&amp;T and Verizon</li>
+<li>IXC built a switching office in each LATA called a POP (point of presence)</li>
+<li>Finally, in 1995 Congress allows these companies to operate in different fields, ending the segregation of these services.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org26781a1" class="outline-4">
+<h4 id="org26781a1"><span class="section-number-4">2.13.3</span> Local Loop: Modems, ADSL, and Fiber</h4>
+<div class="outline-text-4" id="text-2-13-3">
+<ul class="org-ul">
+<li>An end office has up to 10k local loops</li>
+<li>e.g. 205-520-XXXX all in same end office. 0000 to 9999 each have own local loop</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgc5bd92c"></a>Modems<br />
+<div class="outline-text-5" id="text-2-13-3-1">
+<ul class="org-ul">
+<li>Modems are used over voice-grade a telephone line.</li>
+<li>Limited to 3100 Hz with 2400 symbols/s in practice</li>
+<li>Previously 2400 bps modem possible using 0V for 0 and 1V for 1 w/ 1 bit per symbol</li>
+<li>Using QPSK 4800 bps achieved with 2 bits/symbol</li>
+<li>V.32 modem uses 32 constellations allowing for 9600 bps</li>
+<li>Similar incremental gains in V.32 bis, V.34, and finally V.34 bis which gives 33.6 kbps</li>
+<li>Shannon limit is about 35 kbps. V34 bis is final version.</li>
+<li>These rates assume that both ends of connection have analog local loop.</li>
+<li>In fact, the ISP side of connection often has digital line. This allows for 56 kbps.
+<ul class="org-ul">
+<li>70 kbps for Shannon limit, but in each 8 bit sample 1 used for control</li>
+<li>No control bit in Europe -&gt; 64 kbps</li>
+<li>US version chosen for international standard</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org02d3a82"></a>Digital Subscriber Line<br />
+<div class="outline-text-5" id="text-2-13-3-2">
+<ul class="org-ul">
+<li>Comparison
+<dl class="org-dl">
+<dt>Phone line</dt><dd>56 kbps</dd>
+<dt>(no term)</dt><dd>Cable TV 10 Mbps</dd>
+</dl></li>
+<li>Phone lines had 3 Mhz - 4 MHz filter</li>
+<li>xDSL had no such filter, improving speeds
+<ul class="org-ul">
+<li>Unfortunately, this limits the bandwidth as distance increases</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org0c4cd84"></a>Approaches:<br />
+<div class="outline-text-6" id="text-2-13-3-2-1">
+<ul class="org-ul">
+<li>Divide the spectrum on the local loop into three bands:
+<ul class="org-ul">
+<li>POTS (plain old telephone service)</li>
+<li>upstream</li>
+<li>downstream</li>
+</ul></li>
+<li>DMT (Discrete MultiTone) use the OFDM scheme
+<ul class="org-ul">
+<li>1.1 MHz divided into 256 channels (4.3 kHz each)</li>
+<li>channel 0 used for POTS</li>
+<li>channel 1-5 no use (guard channel)</li>
+<li>Channel 6-256: one upstream control, one downstream control, rest for data</li>
+<li>ADSL has 80-90% for downstream</li>
+<li>ADSL standard is 8 Mbps downstream and 1 Mbps upstream</li>
+<li>Now ADSL2+ is 24 Mbps downstream by usinng 2.2 MHz over twisted pair</li>
+<li>These are all best cases speeds for good lines in close proximity to end office</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8e78060" class="outline-3">
+<h3 id="org8e78060"><span class="section-number-3">2.14</span> Fiber to the Home (FttH)</h3>
+<div class="outline-text-3" id="text-2-14">
+<ul class="org-ul">
+<li>FttX - near to home (neighborhood, curb, etc)</li>
+<li>One wavelength shared between all home for downstream and another for upstream. Then optical splitter/combiner used</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org16c52cc" class="outline-3">
+<h3 id="org16c52cc"><span class="section-number-3">2.15</span> Trunks and Multiplexing</h3>
+<div class="outline-text-3" id="text-2-15">
+</div>
+<div id="outline-container-org86caae6" class="outline-4">
+<h4 id="org86caae6"><span class="section-number-4">2.15.1</span> Digitizing Voice Signals</h4>
+<div class="outline-text-4" id="text-2-15-1">
+<ul class="org-ul">
+<li>12 calls is a <b>group</b> and five groups compose a <b>supergroup</b></li>
+<li>Codec digitizes analog sample at end office</li>
+<li>Standard uncompressed data rate is 8 bits every 125 \(\mu\) seconds -&gt; 64 kbps</li>
+<li>US and Japan use T1 line</li>
+<li>E1 used in Europe and elsewhere</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ethan</p>
+<p class="date">Created: 2019-02-24 Sun 23:49</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

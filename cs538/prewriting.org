@@ -1,0 +1,37 @@
+* References
+[A] - https://terpconnect.umd.edu/~toh/spectrum/SignalsAndNoise.html
+[B] - https://ieeexplore-ieee-org.libdata.lib.ua.edu/stamp/stamp.jsp?tp=&arnumber=1457435&tag=1
+[C] - http://molphys.leidenuniv.nl/~exter/SVR/noise.pdf
+  - This source isn't the most readable, but seems useful for discovering relevant topics
+
+* Possible Topic Sections/ Flow notes
+- What is noise/signal? Include some reference to early information theory. Talk about frequency distributions, statistical modeling, and robust signal processing.
+- Frequency distribution sub-topic. Different *types of noise*. Common distributions. Mention of how these could be modeled statistically. Also introduce *filtering* and *smoothing*. see the smoothing problem and the filtering problem
+- Segue from above into *robust signal processing* issue. Talk about results of incorrect nominal assumptions about noise/signal.
+- Matched filters and Linear time invariant systems
+- Talk about image and audio specific noise filtering
+- Fourier analysis and fourier filter
+
+- One plan:
+  - What is signal, noise. General set up.
+  - Classifying types of noise, how are they classified etc.
+  - Different types of noise, what distinguishes them, some properties and noise reduction for these specific types
+  - Above segues into robust signal processing (we thought we knew something about the noise above, here we make less assumptions)
+  - Then we can talk about matched filters (above talks about prior knowledge of noise, now prior knowledge of signal)
+  - Then we can talk about image and audio specific noise filtering
+
+- Also can talk about error correcting codes.
+
+* Noise
+** [A]
+- Noise is random error. Variation are stochastic and unpredictable. Named for analogy to acoustic noise. Many sources of noise (see source for list).
+- One interesting one is *digitzation* noise. Differentiate between "signal" meaning the actual passed message (including noise) and signal meaning the raw message that was intended. Essentially our goal is distinguishing the two. In many cases, repeated measurement can help differentiate signal and noise. This is of course not always possible or practical.
+- "Often the best way to measure the noise is to locate a section of the signal on the baseline where the signal is flat and to compute standard deviation in that section."
+- From above, we can estimate amplitude of noise using standard deviation. Standard deviation computed from small samples size may not be accurate, increasing sample size, converges to true value.
+- Another way to estimate amplitude of noise is via the *peak-to-peak* range.
+- A third way is measuring absolute deviation.
+- Quality of signal often expressed as signal to noise ratio.
+- With repeated measurement we could use *ensemble averaging*. One of the most powerful methods for improving signals.
+- Stopped at frequency distribution. Seems like good content. Start here next time
+** [B]
+- Definition of *robust* signal processing
