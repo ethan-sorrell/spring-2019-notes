@@ -580,6 +580,7 @@ Methods:
   - but there might not be a outgoing packets
   - so we wait a period, if no outgoing packets, send out ack on its own
 - Example Protocols:
+*Trace Example Code from Slides*
   - one-bit sliding window protocol
   - protocol using Go Back N
   - protocol using selective repeat
@@ -590,4 +591,67 @@ Methods:
   - Stop-and-wait corresponds to n=1
 - *Some seq, ack was unintuitive*
   - An ack of 0 means acknowledging frame with seq number 0
- 
+** Pipeline
+1. Sequence
+   - b is channel capacity in bits/sec
+   - L is frame size in bits
+   - R is round-trip propagation time in seconds
+   - L/b + R is delay
+   - Utilization = (L/b) / (L/b + R) = L / (L + Rb)
+   - If L < Rb, the efficiency is less than 50%
+** Example Data Link Protocols
+*** Packet over SONET
+- This is the method used to carry IP packets over SONET optical fiber
+- This method uses PPP (point-to-point protocol) for framing.
+** Point to Point Protocol
+- Older protocol
+- Handles error detection
+- support multiple protocols
+- allows IP address to be negotiated at connection time
+- permits authentication
+*** 3 main features
+- A framing method
+- LCP (Link control protocol)
+  - Bring lines up, tests them, negotiates options, and allows for graceful disconnect
+- NCP (Network Control Protocol)
+  - A way to negotiate network-layer options in a protocol independent way
+  - (Most network-layer use IP protocol though)
+*** Execution 
+- PC calls ISPs router via a modem
+- A physical connection is then set up
+- PC then sends a series of LCP packets in the payload field of PPP frames for PPP parameter negotiation
+- After agreement, a series of NCP packets are sent to configure network layer
+- PC will then use TCP/IP protocol after getting an IP address
+- Communication
+- When finished, NCP tears down the network layer connection and frees IP address
+- LCP shuts down data link layer connection
+- PC tells modem to hang up and release physical layer connection
+*** PPP details
+- framing uses a flag (0x7E) and byte stuffing
+- errors detected with a checksum
+** ADSL
+- ADSL runs from modem to DSLAM
+- PPP data is setn in AAL5 frames over ATM cells:
+  - ATM is a link layer protocol that uses 53-byte cells. 
+* Chapter 4: Medium Access Control
+- MAC is part of Link layer
+- Networks can be divided into point-to-point networks and broadcast networks
+- Generally local networks are broadcast networks, while long-distance networks are point-to-point
+- Broadcast network:
+  - One channel with multiple stations
+  - Who can transmit over channel next?
+** The Channel Allocation Problem 
+*** Static Channel Allocation in LANs and MANs
+- Traditional (older) way of channel allocation
+  - Frequency Division Multiplexing (FDM)
+  - Time Division Multiplexing (TDM)
+  - CDMA
+- FDM
+  - Simple and efficient
+  - But we do not know how many users
+  - If # of users < N, wasted bandwidth
+  - If # of users > N, some users will be denied
+  - Some users will have no traffic at times, wasting bandwidth
+- Data Traffic is Burst by nature
+  - Peak traffic to mean traffic ratio is 1000:1
+- The mean delay using FDM is N times worse than a big central queue.
