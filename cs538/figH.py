@@ -4,7 +4,7 @@ import seaborn as sns
 from scipy.signal import savgol_filter
 
 x = np.linspace(0, 10, 1000)
-y = np.array([np.sin(val) for val in x])
+y = np.array([np.sin(val**2) for val in x])
 y = y + np.random.rand(1000)
 y_filt = savgol_filter(y, 61, 1)
 y_filt2 = savgol_filter(y, 61, 5)
@@ -37,5 +37,5 @@ ax3.set_xlim(0, 10)
 ax3.set_xticklabels('')
 ax3.set_yticklabels('')
 
-plt.savefig("savgol.png")
+plt.savefig("savgol2.png")
 #plt.show()
