@@ -1,0 +1,1344 @@
+Top 5 results for query 1:
+1: Doc 51 with score of 0.022222222222222223
+2: Doc 131 with score of 0.020833333333333332
+3: Doc 523 with score of 0.019487179487179488
+4: Doc 1144 with score of 0.018491484184914843
+5: Doc 114 with score of 0.018473895582329317
+Top 5 results for query 2:
+1: Doc 1201 with score of 0.075
+2: Doc 51 with score of 0.05008210180623974
+3: Doc 45 with score of 0.04633204633204633
+4: Doc 770 with score of 0.04608294930875576
+5: Doc 523 with score of 0.045054945054945054
+Top 5 results for query 3:
+1: Doc 350 with score of 0.031135531135531136
+2: Doc 826 with score of 0.028223574986164915
+3: Doc 181 with score of 0.027777777777777776
+4: Doc 485 with score of 0.02729528535980149
+5: Doc 45 with score of 0.02702702702702703
+Top 5 results for query 4:
+1: Doc 1201 with score of 0.06947115384615385
+2: Doc 523 with score of 0.058579881656804736
+3: Doc 96 with score of 0.05333817126269957
+4: Doc 770 with score of 0.05148883374689826
+5: Doc 45 with score of 0.05093555093555094
+Top 5 results for query 5:
+1: Doc 523 with score of 0.027692307692307693
+2: Doc 1201 with score of 0.0275
+3: Doc 715 with score of 0.022033898305084745
+4: Doc 51 with score of 0.021839080459770115
+5: Doc 103 with score of 0.02112676056338028
+Top 5 results for query 6:
+1: Doc 779 with score of 0.02353896103896104
+2: Doc 998 with score of 0.020737327188940093
+3: Doc 257 with score of 0.019417475728155338
+4: Doc 418 with score of 0.019305019305019305
+5: Doc 997 with score of 0.018668831168831168
+Top 5 results for query 7:
+1: Doc 1201 with score of 0.10880681818181819
+2: Doc 523 with score of 0.08251748251748252
+3: Doc 492 with score of 0.07493857493857493
+4: Doc 96 with score of 0.07289879931389365
+5: Doc 1382 with score of 0.07163636363636364
+Top 5 results for query 8:
+1: Doc 492 with score of 0.03815580286168521
+2: Doc 1149 with score of 0.029411764705882353
+3: Doc 1201 with score of 0.025735294117647058
+4: Doc 1115 with score of 0.02491349480968858
+5: Doc 1347 with score of 0.0244173140954495
+Top 5 results for query 9:
+1: Doc 269 with score of 0.0330188679245283
+2: Doc 21 with score of 0.03048780487804878
+3: Doc 398 with score of 0.029605263157894735
+4: Doc 45 with score of 0.028716216216216218
+5: Doc 775 with score of 0.025
+Top 5 results for query 10:
+1: Doc 1038 with score of 0.03945578231292517
+2: Doc 405 with score of 0.0392156862745098
+3: Doc 482 with score of 0.03888888888888889
+4: Doc 998 with score of 0.03655913978494624
+5: Doc 1149 with score of 0.03611111111111111
+Top 5 results for query 11:
+1: Doc 1201 with score of 0.09930555555555555
+2: Doc 523 with score of 0.07008547008547009
+3: Doc 770 with score of 0.06093189964157706
+4: Doc 157 with score of 0.06018518518518518
+5: Doc 1382 with score of 0.06
+Top 5 results for query 12:
+1: Doc 1201 with score of 0.06394230769230769
+2: Doc 523 with score of 0.054437869822485205
+3: Doc 45 with score of 0.0498960498960499
+4: Doc 131 with score of 0.04861111111111111
+5: Doc 770 with score of 0.04838709677419355
+Top 5 results for query 13:
+1: Doc 1201 with score of 0.18333333333333332
+2: Doc 523 with score of 0.11965811965811966
+3: Doc 770 with score of 0.10931899641577061
+4: Doc 45 with score of 0.10510510510510511
+5: Doc 903 with score of 0.10153256704980843
+Top 5 results for query 14:
+1: Doc 64 with score of 0.04923076923076923
+2: Doc 382 with score of 0.02962962962962963
+3: Doc 256 with score of 0.029411764705882353
+4: Doc 568 with score of 0.023880597014925373
+5: Doc 308 with score of 0.023076923076923078
+Top 5 results for query 15:
+1: Doc 405 with score of 0.07058823529411765
+2: Doc 131 with score of 0.05416666666666667
+3: Doc 877 with score of 0.05142857142857143
+4: Doc 507 with score of 0.05
+5: Doc 1045 with score of 0.047058823529411764
+Top 5 results for query 16:
+1: Doc 1201 with score of 0.05514705882352941
+2: Doc 523 with score of 0.05067873303167421
+3: Doc 803 with score of 0.04503676470588235
+4: Doc 770 with score of 0.04269449715370019
+5: Doc 775 with score of 0.042352941176470586
+Top 5 results for query 17:
+1: Doc 523 with score of 0.08269230769230769
+2: Doc 1201 with score of 0.08046875
+3: Doc 389 with score of 0.0763888888888889
+4: Doc 803 with score of 0.072265625
+5: Doc 131 with score of 0.07074652777777778
+Top 5 results for query 18:
+1: Doc 492 with score of 0.05855855855855856
+2: Doc 1115 with score of 0.05392156862745098
+3: Doc 234 with score of 0.05322128851540616
+4: Doc 189 with score of 0.052248677248677246
+5: Doc 96 with score of 0.05188679245283019
+Top 5 results for query 19:
+1: Doc 1201 with score of 0.07631578947368421
+2: Doc 523 with score of 0.0728744939271255
+3: Doc 131 with score of 0.07273391812865497
+4: Doc 96 with score of 0.07149950347567031
+5: Doc 45 with score of 0.0689900426742532
+Top 5 results for query 20:
+1: Doc 1201 with score of 0.0761904761904762
+2: Doc 523 with score of 0.04908424908424908
+3: Doc 45 with score of 0.0489060489060489
+4: Doc 131 with score of 0.044642857142857144
+5: Doc 770 with score of 0.0445468509984639
+Top 5 results for query 21:
+1: Doc 1201 with score of 0.09875
+2: Doc 157 with score of 0.06049382716049383
+3: Doc 61 with score of 0.05952380952380952
+4: Doc 770 with score of 0.05806451612903226
+5: Doc 523 with score of 0.057435897435897436
+Top 5 results for query 22:
+1: Doc 1201 with score of 0.1584375
+2: Doc 523 with score of 0.11
+3: Doc 770 with score of 0.09838709677419355
+4: Doc 45 with score of 0.09594594594594595
+5: Doc 96 with score of 0.09481132075471699
+Top 5 results for query 23:
+1: Doc 635 with score of 0.02650602409638554
+2: Doc 1287 with score of 0.023529411764705882
+3: Doc 382 with score of 0.022222222222222223
+4: Doc 1290 with score of 0.020618556701030927
+5: Doc 1142 with score of 0.020588235294117647
+Top 5 results for query 24:
+1: Doc 1201 with score of 0.10432692307692308
+2: Doc 157 with score of 0.06552706552706553
+3: Doc 770 with score of 0.06327543424317618
+4: Doc 61 with score of 0.06318681318681318
+5: Doc 523 with score of 0.06272189349112427
+Top 5 results for query 25:
+1: Doc 1201 with score of 0.09264705882352942
+2: Doc 803 with score of 0.0661764705882353
+3: Doc 523 with score of 0.0660633484162896
+4: Doc 770 with score of 0.06451612903225806
+5: Doc 341 with score of 0.06363636363636363
+Top 5 results for query 26:
+1: Doc 382 with score of 0.06851851851851852
+2: Doc 1201 with score of 0.0675
+3: Doc 736 with score of 0.059375
+4: Doc 96 with score of 0.0580188679245283
+5: Doc 1149 with score of 0.05625
+Top 5 results for query 27:
+1: Doc 1201 with score of 0.07991071428571428
+2: Doc 523 with score of 0.051648351648351645
+3: Doc 749 with score of 0.049107142857142856
+4: Doc 131 with score of 0.04861111111111111
+5: Doc 770 with score of 0.04723502304147465
+Top 5 results for query 28:
+1: Doc 1201 with score of 0.081875
+2: Doc 523 with score of 0.05846153846153846
+3: Doc 45 with score of 0.05810810810810811
+4: Doc 131 with score of 0.05694444444444444
+5: Doc 96 with score of 0.05471698113207547
+Top 5 results for query 29:
+1: Doc 1201 with score of 0.09444444444444444
+2: Doc 523 with score of 0.0641025641025641
+3: Doc 96 with score of 0.059748427672955975
+4: Doc 770 with score of 0.05824372759856631
+5: Doc 45 with score of 0.05780780780780781
+Top 5 results for query 30:
+1: Doc 382 with score of 0.047619047619047616
+2: Doc 678 with score of 0.03759398496240601
+3: Doc 420 with score of 0.03619047619047619
+4: Doc 1256 with score of 0.0326530612244898
+5: Doc 96 with score of 0.03234501347708895
+Top 5 results for query 31:
+1: Doc 523 with score of 0.038461538461538464
+2: Doc 131 with score of 0.03345959595959596
+3: Doc 389 with score of 0.03282828282828283
+4: Doc 96 with score of 0.03130360205831904
+5: Doc 690 with score of 0.030058651026392963
+Top 5 results for query 32:
+1: Doc 752 with score of 0.03519061583577713
+2: Doc 1039 with score of 0.028363636363636365
+3: Doc 1118 with score of 0.027079303675048357
+4: Doc 27 with score of 0.02631578947368421
+5: Doc 1175 with score of 0.02585487906588824
+Top 5 results for query 33:
+1: Doc 635 with score of 0.020749665327978582
+2: Doc 431 with score of 0.020080321285140562
+3: Doc 594 with score of 0.019005847953216373
+4: Doc 947 with score of 0.018824609733700644
+5: Doc 175 with score of 0.01808785529715762
+Top 5 results for query 34:
+1: Doc 382 with score of 0.030303030303030304
+2: Doc 175 with score of 0.02959830866807611
+3: Doc 795 with score of 0.023310023310023312
+4: Doc 431 with score of 0.023001095290251915
+5: Doc 520 with score of 0.020475020475020474
+Top 5 results for query 35:
+1: Doc 64 with score of 0.020512820512820513
+2: Doc 635 with score of 0.020080321285140562
+3: Doc 1160 with score of 0.01694915254237288
+4: Doc 319 with score of 0.01643192488262911
+5: Doc 1290 with score of 0.01632302405498282
+Top 5 results for query 36:
+1: Doc 382 with score of 0.0291005291005291
+2: Doc 269 with score of 0.026954177897574125
+3: Doc 539 with score of 0.021103896103896104
+4: Doc 295 with score of 0.02040816326530612
+5: Doc 993 with score of 0.01948051948051948
+Top 5 results for query 37:
+1: Doc 748 with score of 0.02962962962962963
+2: Doc 189 with score of 0.025573192239858905
+3: Doc 1149 with score of 0.024691358024691357
+4: Doc 519 with score of 0.0243531202435312
+5: Doc 188 with score of 0.024242424242424242
+Top 5 results for query 38:
+1: Doc 1201 with score of 0.07864583333333333
+2: Doc 308 with score of 0.04807692307692308
+3: Doc 523 with score of 0.047435897435897434
+4: Doc 96 with score of 0.046383647798742135
+5: Doc 798 with score of 0.044466403162055336
+Top 5 results for query 39:
+1: Doc 1149 with score of 0.032407407407407406
+2: Doc 959 with score of 0.024691358024691357
+3: Doc 272 with score of 0.02287581699346405
+4: Doc 315 with score of 0.022114347357065803
+5: Doc 635 with score of 0.0214190093708166
+Top 5 results for query 40:
+1: Doc 635 with score of 0.0214190093708166
+2: Doc 272 with score of 0.01895424836601307
+3: Doc 1333 with score of 0.018691588785046728
+4: Doc 26 with score of 0.018518518518518517
+5: Doc 1290 with score of 0.018327605956471937
+Top 5 results for query 41:
+1: Doc 1201 with score of 0.06
+2: Doc 803 with score of 0.051041666666666666
+3: Doc 289 with score of 0.04642857142857143
+4: Doc 1149 with score of 0.04537037037037037
+5: Doc 482 with score of 0.044444444444444446
+Top 5 results for query 42:
+1: Doc 1201 with score of 0.07678571428571429
+2: Doc 523 with score of 0.05567765567765568
+3: Doc 341 with score of 0.053246753246753244
+4: Doc 770 with score of 0.05222734254992319
+5: Doc 803 with score of 0.052083333333333336
+Top 5 results for query 43:
+1: Doc 1201 with score of 0.04448529411764706
+2: Doc 523 with score of 0.03800904977375565
+3: Doc 39 with score of 0.03529411764705882
+4: Doc 18 with score of 0.034389140271493215
+5: Doc 341 with score of 0.034224598930481284
+Top 5 results for query 44:
+1: Doc 1201 with score of 0.17
+2: Doc 45 with score of 0.11756756756756757
+3: Doc 523 with score of 0.11692307692307692
+4: Doc 131 with score of 0.11041666666666666
+5: Doc 96 with score of 0.11037735849056604
+Top 5 results for query 45:
+1: Doc 1201 with score of 0.06490384615384616
+2: Doc 96 with score of 0.05224963715529753
+3: Doc 26 with score of 0.049145299145299144
+4: Doc 45 with score of 0.04885654885654886
+5: Doc 131 with score of 0.04754273504273504
+Top 5 results for query 46:
+1: Doc 1201 with score of 0.08660714285714285
+2: Doc 45 with score of 0.05888030888030888
+3: Doc 523 with score of 0.05714285714285714
+4: Doc 269 with score of 0.05660377358490566
+5: Doc 770 with score of 0.055299539170506916
+Top 5 results for query 47:
+1: Doc 1201 with score of 0.05267857142857143
+2: Doc 61 with score of 0.042091836734693876
+3: Doc 1149 with score of 0.040674603174603176
+4: Doc 305 with score of 0.03816046966731898
+5: Doc 308 with score of 0.037545787545787544
+Top 5 results for query 48:
+1: Doc 526 with score of 0.02771855010660981
+2: Doc 41 with score of 0.02127659574468085
+3: Doc 879 with score of 0.02040816326530612
+4: Doc 440 with score of 0.020089285714285716
+5: Doc 797 with score of 0.017070979335130278
+Top 5 results for query 49:
+1: Doc 1201 with score of 0.10394736842105264
+2: Doc 523 with score of 0.06477732793522267
+3: Doc 157 with score of 0.06237816764132553
+4: Doc 308 with score of 0.0620782726045884
+5: Doc 192 with score of 0.061855670103092786
+Top 5 results for query 50:
+1: Doc 1201 with score of 0.173046875
+2: Doc 96 with score of 0.13266509433962265
+3: Doc 45 with score of 0.12837837837837837
+4: Doc 523 with score of 0.12403846153846154
+5: Doc 131 with score of 0.12196180555555555
+Top 5 results for query 51:
+1: Doc 1201 with score of 0.08571428571428572
+2: Doc 523 with score of 0.0652014652014652
+3: Doc 96 with score of 0.05615453728661276
+4: Doc 45 with score of 0.055341055341055344
+5: Doc 61 with score of 0.05442176870748299
+Top 5 results for query 52:
+1: Doc 1201 with score of 0.148046875
+2: Doc 523 with score of 0.09615384615384616
+3: Doc 96 with score of 0.09433962264150944
+4: Doc 45 with score of 0.08952702702702703
+5: Doc 770 with score of 0.08870967741935484
+Top 5 results for query 53:
+1: Doc 1201 with score of 0.08958333333333333
+2: Doc 523 with score of 0.073992673992674
+3: Doc 61 with score of 0.06972789115646258
+4: Doc 45 with score of 0.06756756756756757
+5: Doc 269 with score of 0.0673854447439353
+Top 5 results for query 54:
+1: Doc 1201 with score of 0.163671875
+2: Doc 45 with score of 0.11317567567567567
+3: Doc 523 with score of 0.10865384615384616
+4: Doc 770 with score of 0.10181451612903226
+5: Doc 96 with score of 0.09846698113207547
+Top 5 results for query 55:
+1: Doc 1149 with score of 0.05555555555555555
+2: Doc 1201 with score of 0.0484375
+3: Doc 523 with score of 0.04423076923076923
+4: Doc 959 with score of 0.03958333333333333
+5: Doc 51 with score of 0.039511494252873564
+Top 5 results for query 56:
+1: Doc 51 with score of 0.02375478927203065
+2: Doc 753 with score of 0.021449275362318842
+3: Doc 523 with score of 0.020512820512820513
+4: Doc 640 with score of 0.020040899795501024
+5: Doc 813 with score of 0.01971830985915493
+Top 5 results for query 57:
+1: Doc 1201 with score of 0.11298076923076923
+2: Doc 770 with score of 0.06699751861042183
+3: Doc 61 with score of 0.06593406593406594
+4: Doc 157 with score of 0.06552706552706553
+5: Doc 803 with score of 0.06490384615384616
+Top 5 results for query 58:
+1: Doc 1201 with score of 0.0872159090909091
+2: Doc 523 with score of 0.06643356643356643
+3: Doc 45 with score of 0.06326781326781326
+4: Doc 770 with score of 0.0593841642228739
+5: Doc 96 with score of 0.05660377358490566
+Top 5 results for query 59:
+1: Doc 1201 with score of 0.02159090909090909
+2: Doc 192 with score of 0.019681349578256794
+3: Doc 24 with score of 0.019374068554396422
+4: Doc 899 with score of 0.019342359767891684
+5: Doc 255 with score of 0.018774703557312252
+Top 5 results for query 60:
+1: Doc 1201 with score of 0.0865625
+2: Doc 523 with score of 0.05923076923076923
+3: Doc 107 with score of 0.05543478260869565
+4: Doc 1149 with score of 0.05347222222222222
+5: Doc 1382 with score of 0.0512
+Top 5 results for query 61:
+1: Doc 1201 with score of 0.054017857142857145
+2: Doc 382 with score of 0.047619047619047616
+3: Doc 269 with score of 0.04582210242587601
+4: Doc 1149 with score of 0.044642857142857144
+5: Doc 803 with score of 0.04241071428571429
+Top 5 results for query 62:
+1: Doc 1201 with score of 0.16059782608695652
+2: Doc 523 with score of 0.10702341137123746
+3: Doc 770 with score of 0.10448807854137447
+4: Doc 45 with score of 0.10399529964747356
+5: Doc 96 with score of 0.09885151763740771
+Top 5 results for query 63:
+1: Doc 1045 with score of 0.0374331550802139
+2: Doc 96 with score of 0.03687821612349914
+3: Doc 411 with score of 0.03305785123966942
+4: Doc 993 with score of 0.028925619834710745
+5: Doc 189 with score of 0.02886002886002886
+Top 5 results for query 64:
+1: Doc 1201 with score of 0.05677083333333333
+2: Doc 523 with score of 0.047435897435897434
+3: Doc 131 with score of 0.04282407407407408
+4: Doc 45 with score of 0.041666666666666664
+5: Doc 730 with score of 0.04033333333333333
+Top 5 results for query 65:
+1: Doc 382 with score of 0.07936507936507936
+2: Doc 1201 with score of 0.06517857142857143
+3: Doc 393 with score of 0.06493506493506493
+4: Doc 4 with score of 0.06190476190476191
+5: Doc 389 with score of 0.061507936507936505
+Top 5 results for query 66:
+1: Doc 1201 with score of 0.09375
+2: Doc 523 with score of 0.06813186813186813
+3: Doc 770 with score of 0.06451612903225806
+4: Doc 803 with score of 0.0625
+5: Doc 61 with score of 0.061224489795918366
+Top 5 results for query 67:
+1: Doc 382 with score of 0.06018518518518518
+2: Doc 1201 with score of 0.055078125
+3: Doc 393 with score of 0.05303030303030303
+4: Doc 4 with score of 0.05277777777777778
+5: Doc 1149 with score of 0.052083333333333336
+Top 5 results for query 68:
+1: Doc 1201 with score of 0.04522058823529412
+2: Doc 1382 with score of 0.033411764705882356
+3: Doc 157 with score of 0.03159041394335512
+4: Doc 61 with score of 0.03046218487394958
+5: Doc 1149 with score of 0.03022875816993464
+Top 5 results for query 69:
+1: Doc 1201 with score of 0.0765625
+2: Doc 523 with score of 0.05512820512820513
+3: Doc 192 with score of 0.048109965635738834
+4: Doc 1382 with score of 0.048
+5: Doc 61 with score of 0.046130952380952384
+Top 5 results for query 70:
+1: Doc 1201 with score of 0.0890625
+2: Doc 1382 with score of 0.064
+3: Doc 192 with score of 0.061855670103092786
+4: Doc 61 with score of 0.05803571428571429
+5: Doc 523 with score of 0.057692307692307696
+Top 5 results for query 71:
+1: Doc 568 with score of 0.029850746268656716
+2: Doc 305 with score of 0.02968036529680365
+3: Doc 1090 with score of 0.02564102564102564
+4: Doc 382 with score of 0.024691358024691357
+5: Doc 678 with score of 0.023391812865497075
+Top 5 results for query 72:
+1: Doc 1078 with score of 0.021645021645021644
+2: Doc 139 with score of 0.018292682926829267
+3: Doc 53 with score of 0.017777777777777778
+4: Doc 1256 with score of 0.01746031746031746
+5: Doc 604 with score of 0.016975308641975308
+Top 5 results for query 73:
+1: Doc 1201 with score of 0.07527173913043478
+2: Doc 523 with score of 0.05551839464882943
+3: Doc 45 with score of 0.05405405405405406
+4: Doc 96 with score of 0.05004101722723544
+5: Doc 131 with score of 0.04921497584541063
+Top 5 results for query 74:
+1: Doc 1201 with score of 0.09488636363636363
+2: Doc 523 with score of 0.07342657342657342
+3: Doc 770 with score of 0.062316715542521994
+4: Doc 45 with score of 0.060810810810810814
+5: Doc 96 with score of 0.0604631217838765
+Top 5 results for query 75:
+1: Doc 1201 with score of 0.13541666666666666
+2: Doc 45 with score of 0.08687258687258688
+3: Doc 523 with score of 0.08424908424908426
+4: Doc 96 with score of 0.08041329739442947
+5: Doc 157 with score of 0.07848324514991181
+Top 5 results for query 76:
+1: Doc 1201 with score of 0.08720238095238095
+2: Doc 523 with score of 0.06886446886446887
+3: Doc 45 with score of 0.06241956241956242
+4: Doc 96 with score of 0.05840071877807727
+5: Doc 1313 with score of 0.05722288915566227
+Top 5 results for query 77:
+1: Doc 1201 with score of 0.13194444444444445
+2: Doc 523 with score of 0.08974358974358974
+3: Doc 45 with score of 0.07957957957957958
+4: Doc 1313 with score of 0.07913165266106442
+5: Doc 770 with score of 0.07885304659498207
+Top 5 results for query 78:
+1: Doc 1201 with score of 0.11971153846153847
+2: Doc 523 with score of 0.0863905325443787
+3: Doc 45 with score of 0.08004158004158005
+4: Doc 770 with score of 0.07692307692307693
+5: Doc 96 with score of 0.07474600870827286
+Top 5 results for query 79:
+1: Doc 199 with score of 0.03148148148148148
+2: Doc 748 with score of 0.025833333333333333
+3: Doc 708 with score of 0.023809523809523808
+4: Doc 175 with score of 0.023255813953488372
+5: Doc 791 with score of 0.022135416666666668
+Top 5 results for query 80:
+1: Doc 748 with score of 0.02666666666666667
+2: Doc 1333 with score of 0.0264797507788162
+3: Doc 1149 with score of 0.02546296296296296
+4: Doc 1175 with score of 0.023955147808358817
+5: Doc 482 with score of 0.023148148148148147
+Top 5 results for query 81:
+1: Doc 1038 with score of 0.04591836734693878
+2: Doc 1149 with score of 0.041666666666666664
+3: Doc 446 with score of 0.038288288288288286
+4: Doc 669 with score of 0.03741496598639456
+5: Doc 382 with score of 0.037037037037037035
+Top 5 results for query 82:
+1: Doc 779 with score of 0.03354978354978355
+2: Doc 635 with score of 0.029259896729776247
+3: Doc 998 with score of 0.028417818740399385
+4: Doc 1386 with score of 0.028182701652089408
+5: Doc 225 with score of 0.026965002868617326
+Top 5 results for query 83:
+1: Doc 1201 with score of 0.2048611111111111
+2: Doc 523 with score of 0.1452991452991453
+3: Doc 45 with score of 0.13213213213213212
+4: Doc 770 with score of 0.12903225806451613
+5: Doc 131 with score of 0.12654320987654322
+Top 5 results for query 84:
+1: Doc 1201 with score of 0.048355263157894735
+2: Doc 1149 with score of 0.03728070175438596
+3: Doc 269 with score of 0.036742800397219465
+4: Doc 61 with score of 0.03665413533834586
+5: Doc 51 with score of 0.03569267997580157
+Top 5 results for query 85:
+1: Doc 382 with score of 0.03909465020576132
+2: Doc 669 with score of 0.030612244897959183
+3: Doc 539 with score of 0.030303030303030304
+4: Doc 635 with score of 0.028781793842034806
+5: Doc 96 with score of 0.02830188679245283
+Top 5 results for query 86:
+1: Doc 382 with score of 0.021442495126705652
+2: Doc 594 with score of 0.019390581717451522
+3: Doc 635 with score of 0.019023462270133164
+4: Doc 755 with score of 0.018947368421052633
+5: Doc 1142 with score of 0.018575851393188854
+Top 5 results for query 87:
+1: Doc 1201 with score of 0.116875
+2: Doc 45 with score of 0.0777027027027027
+3: Doc 523 with score of 0.07461538461538461
+4: Doc 308 with score of 0.07371794871794872
+5: Doc 192 with score of 0.07061855670103093
+Top 5 results for query 88:
+1: Doc 1201 with score of 0.07857142857142857
+2: Doc 523 with score of 0.05641025641025641
+3: Doc 45 with score of 0.05341055341055341
+4: Doc 992 with score of 0.050702295306611855
+5: Doc 341 with score of 0.050216450216450215
+Top 5 results for query 89:
+1: Doc 1201 with score of 0.059722222222222225
+2: Doc 803 with score of 0.04774305555555555
+3: Doc 382 with score of 0.043209876543209874
+4: Doc 96 with score of 0.041928721174004195
+5: Doc 1139 with score of 0.0411522633744856
+Top 5 results for query 90:
+1: Doc 411 with score of 0.030303030303030304
+2: Doc 96 with score of 0.02830188679245283
+3: Doc 382 with score of 0.024691358024691357
+4: Doc 996 with score of 0.02401129943502825
+5: Doc 55 with score of 0.02112676056338028
+Top 5 results for query 91:
+1: Doc 41 with score of 0.026595744680851064
+2: Doc 252 with score of 0.0224609375
+3: Doc 610 with score of 0.020833333333333332
+4: Doc 925 with score of 0.019886363636363636
+5: Doc 1201 with score of 0.01875
+Top 5 results for query 92:
+1: Doc 1201 with score of 0.08104166666666666
+2: Doc 523 with score of 0.06769230769230769
+3: Doc 770 with score of 0.053763440860215055
+4: Doc 1313 with score of 0.0515406162464986
+5: Doc 131 with score of 0.05138888888888889
+Top 5 results for query 93:
+1: Doc 1201 with score of 0.04375
+2: Doc 635 with score of 0.04188181296615032
+3: Doc 523 with score of 0.03076923076923077
+4: Doc 329 with score of 0.029192546583850933
+5: Doc 770 with score of 0.028417818740399385
+Top 5 results for query 94:
+1: Doc 1201 with score of 0.13169642857142858
+2: Doc 523 with score of 0.09340659340659341
+3: Doc 45 with score of 0.07818532818532818
+4: Doc 770 with score of 0.0771889400921659
+5: Doc 802 with score of 0.0748847926267281
+Top 5 results for query 95:
+1: Doc 1201 with score of 0.0875
+2: Doc 269 with score of 0.05660377358490566
+3: Doc 523 with score of 0.055384615384615386
+4: Doc 61 with score of 0.05357142857142857
+5: Doc 770 with score of 0.0532258064516129
+Top 5 results for query 96:
+1: Doc 1201 with score of 0.055288461538461536
+2: Doc 18 with score of 0.04260355029585799
+3: Doc 308 with score of 0.04043392504930966
+4: Doc 779 with score of 0.039335664335664336
+5: Doc 45 with score of 0.038461538461538464
+Top 5 results for query 97:
+1: Doc 1201 with score of 0.06985294117647059
+2: Doc 523 with score of 0.05520361990950226
+3: Doc 114 with score of 0.04535790219702339
+4: Doc 770 with score of 0.04364326375711575
+5: Doc 1313 with score of 0.042511122095897184
+Top 5 results for query 98:
+1: Doc 673 with score of 0.013988095238095239
+2: Doc 1201 with score of 0.013095238095238096
+3: Doc 638 with score of 0.012558869701726845
+4: Doc 685 with score of 0.012359142130134497
+5: Doc 315 with score of 0.012020342117429497
+Top 5 results for query 99:
+1: Doc 1201 with score of 0.030706521739130434
+2: Doc 376 with score of 0.025296442687747035
+3: Doc 402 with score of 0.023581429624170966
+4: Doc 94 with score of 0.02348291095094164
+5: Doc 51 with score of 0.022988505747126436
+Top 5 results for query 100:
+1: Doc 1201 with score of 0.11541666666666667
+2: Doc 96 with score of 0.08238993710691823
+3: Doc 45 with score of 0.07927927927927927
+4: Doc 523 with score of 0.07794871794871795
+5: Doc 131 with score of 0.07453703703703704
+Top 5 results for query 101:
+1: Doc 1201 with score of 0.0920138888888889
+2: Doc 523 with score of 0.05982905982905983
+3: Doc 770 with score of 0.05734767025089606
+4: Doc 61 with score of 0.05654761904761905
+5: Doc 45 with score of 0.05630630630630631
+Top 5 results for query 102:
+1: Doc 910 with score of 0.034482758620689655
+2: Doc 690 with score of 0.03046594982078853
+3: Doc 131 with score of 0.02854938271604938
+4: Doc 482 with score of 0.027777777777777776
+5: Doc 507 with score of 0.027777777777777776
+Top 5 results for query 103:
+1: Doc 1201 with score of 0.18541666666666667
+2: Doc 770 with score of 0.12007168458781362
+3: Doc 523 with score of 0.11965811965811966
+4: Doc 96 with score of 0.11530398322851153
+5: Doc 45 with score of 0.1066066066066066
+Top 5 results for query 104:
+1: Doc 1201 with score of 0.08980263157894737
+2: Doc 523 with score of 0.06315789473684211
+3: Doc 770 with score of 0.06196943972835314
+4: Doc 96 with score of 0.05809334657398212
+5: Doc 803 with score of 0.05756578947368421
+Top 5 results for query 105:
+1: Doc 1201 with score of 0.12708333333333333
+2: Doc 523 with score of 0.09128205128205129
+3: Doc 96 with score of 0.09056603773584905
+4: Doc 45 with score of 0.08468468468468468
+5: Doc 770 with score of 0.08387096774193549
+Top 5 results for query 106:
+1: Doc 635 with score of 0.04096385542168675
+2: Doc 1290 with score of 0.03505154639175258
+3: Doc 890 with score of 0.03076923076923077
+4: Doc 764 with score of 0.03058823529411765
+5: Doc 1129 with score of 0.026865671641791045
+Top 5 results for query 107:
+1: Doc 1201 with score of 0.0654891304347826
+2: Doc 523 with score of 0.05217391304347826
+3: Doc 731 with score of 0.048760666395774074
+4: Doc 382 with score of 0.04830917874396135
+5: Doc 770 with score of 0.047685834502103785
+Top 5 results for query 108:
+1: Doc 1201 with score of 0.0875
+2: Doc 96 with score of 0.06367924528301887
+3: Doc 523 with score of 0.06025641025641026
+4: Doc 770 with score of 0.053763440860215055
+5: Doc 131 with score of 0.05150462962962963
+Top 5 results for query 109:
+1: Doc 51 with score of 0.05057471264367816
+2: Doc 5 with score of 0.03076923076923077
+3: Doc 31 with score of 0.03076923076923077
+4: Doc 715 with score of 0.030508474576271188
+5: Doc 877 with score of 0.02857142857142857
+Top 5 results for query 110:
+1: Doc 1201 with score of 0.14333333333333334
+2: Doc 523 with score of 0.09435897435897436
+3: Doc 770 with score of 0.0913978494623656
+4: Doc 96 with score of 0.08993710691823899
+5: Doc 45 with score of 0.08828828828828829
+Top 5 results for query 111:
+1: Doc 1201 with score of 0.058203125
+2: Doc 96 with score of 0.04363207547169811
+3: Doc 45 with score of 0.04222972972972973
+4: Doc 523 with score of 0.041346153846153845
+5: Doc 826 with score of 0.039568345323741004
+Top 5 results for query 112:
+1: Doc 1201 with score of 0.1221875
+2: Doc 523 with score of 0.08538461538461538
+3: Doc 45 with score of 0.08243243243243244
+4: Doc 131 with score of 0.07847222222222222
+5: Doc 96 with score of 0.07783018867924528
+Top 5 results for query 113:
+1: Doc 1256 with score of 0.02857142857142857
+2: Doc 411 with score of 0.026223776223776224
+3: Doc 708 with score of 0.023809523809523808
+4: Doc 96 with score of 0.023222060957910014
+5: Doc 382 with score of 0.022792022792022793
+Top 5 results for query 114:
+1: Doc 1201 with score of 0.08400735294117648
+2: Doc 523 with score of 0.06244343891402715
+3: Doc 770 with score of 0.05502846299810247
+4: Doc 96 with score of 0.05327413984461709
+5: Doc 1313 with score of 0.051779535343549184
+Top 5 results for query 115:
+1: Doc 1201 with score of 0.08125
+2: Doc 523 with score of 0.0660633484162896
+3: Doc 45 with score of 0.05961844197138315
+4: Doc 96 with score of 0.05549389567147614
+5: Doc 131 with score of 0.05473856209150327
+Top 5 results for query 116:
+1: Doc 1201 with score of 0.1875
+2: Doc 770 with score of 0.11827956989247312
+3: Doc 523 with score of 0.11692307692307692
+4: Doc 45 with score of 0.11261261261261261
+5: Doc 96 with score of 0.10754716981132076
+Top 5 results for query 117:
+1: Doc 1201 with score of 0.15486111111111112
+2: Doc 523 with score of 0.11452991452991453
+3: Doc 96 with score of 0.11058700209643606
+4: Doc 45 with score of 0.10135135135135136
+5: Doc 770 with score of 0.1003584229390681
+Top 5 results for query 118:
+1: Doc 1201 with score of 0.1175
+2: Doc 803 with score of 0.08125
+3: Doc 96 with score of 0.07484276729559748
+4: Doc 523 with score of 0.07384615384615385
+5: Doc 770 with score of 0.07311827956989247
+Top 5 results for query 119:
+1: Doc 1201 with score of 0.0971875
+2: Doc 96 with score of 0.06556603773584906
+3: Doc 523 with score of 0.06538461538461539
+4: Doc 45 with score of 0.06013513513513514
+5: Doc 770 with score of 0.05967741935483871
+Top 5 results for query 120:
+1: Doc 1201 with score of 0.0630952380952381
+2: Doc 523 with score of 0.05787545787545788
+3: Doc 131 with score of 0.05357142857142857
+4: Doc 45 with score of 0.052123552123552123
+5: Doc 96 with score of 0.05121293800539083
+Top 5 results for query 121:
+1: Doc 887 with score of 0.0304093567251462
+2: Doc 1146 with score of 0.02666666666666667
+3: Doc 31 with score of 0.023076923076923078
+4: Doc 1174 with score of 0.020833333333333332
+5: Doc 885 with score of 0.02
+Top 5 results for query 122:
+1: Doc 1201 with score of 0.09669117647058824
+2: Doc 523 with score of 0.07058823529411765
+3: Doc 45 with score of 0.06836248012718601
+4: Doc 131 with score of 0.0661764705882353
+5: Doc 96 with score of 0.06548279689234185
+Top 5 results for query 123:
+1: Doc 1201 with score of 0.05625
+2: Doc 775 with score of 0.04588235294117647
+3: Doc 131 with score of 0.0457516339869281
+4: Doc 96 with score of 0.04550499445061043
+5: Doc 45 with score of 0.04531001589825119
+Top 5 results for query 124:
+1: Doc 1201 with score of 0.061213235294117645
+2: Doc 523 with score of 0.04660633484162896
+3: Doc 45 with score of 0.04213036565977742
+4: Doc 131 with score of 0.04084967320261438
+5: Doc 770 with score of 0.04032258064516129
+Top 5 results for query 125:
+1: Doc 1195 with score of 0.030753968253968252
+2: Doc 997 with score of 0.028409090909090908
+3: Doc 350 with score of 0.026785714285714284
+4: Doc 1352 with score of 0.02577319587628866
+5: Doc 176 with score of 0.023706896551724137
+Top 5 results for query 126:
+1: Doc 974 with score of 0.021052631578947368
+2: Doc 1265 with score of 0.018465909090909092
+3: Doc 1095 with score of 0.017676767676767676
+4: Doc 389 with score of 0.017361111111111112
+5: Doc 1328 with score of 0.016581632653061226
+Top 5 results for query 127:
+1: Doc 1201 with score of 0.05690789473684211
+2: Doc 523 with score of 0.048582995951417005
+3: Doc 61 with score of 0.042293233082706765
+4: Doc 157 with score of 0.041423001949317736
+5: Doc 1175 with score of 0.04104297440849831
+Top 5 results for query 128:
+1: Doc 1038 with score of 0.04081632653061224
+2: Doc 945 with score of 0.040061633281972264
+3: Doc 669 with score of 0.03896103896103896
+4: Doc 745 with score of 0.03896103896103896
+5: Doc 382 with score of 0.037037037037037035
+Top 5 results for query 129:
+1: Doc 1201 with score of 0.04375
+2: Doc 803 with score of 0.0322265625
+3: Doc 1149 with score of 0.030381944444444444
+4: Doc 341 with score of 0.030113636363636363
+5: Doc 1382 with score of 0.029
+Top 5 results for query 130:
+1: Doc 1201 with score of 0.13933823529411765
+2: Doc 523 with score of 0.09592760180995476
+3: Doc 45 with score of 0.09141494435612083
+4: Doc 770 with score of 0.08918406072106262
+5: Doc 96 with score of 0.0876803551609323
+Top 5 results for query 131:
+1: Doc 1201 with score of 0.025694444444444443
+2: Doc 635 with score of 0.0214190093708166
+3: Doc 950 with score of 0.019916142557651992
+4: Doc 1021 with score of 0.019753086419753086
+5: Doc 1014 with score of 0.01951951951951952
+Top 5 results for query 132:
+1: Doc 1029 with score of 0.05853658536585366
+2: Doc 1013 with score of 0.057534246575342465
+3: Doc 131 with score of 0.05138888888888889
+4: Doc 45 with score of 0.051351351351351354
+5: Doc 761 with score of 0.05106382978723404
+Top 5 results for query 133:
+1: Doc 1045 with score of 0.058823529411764705
+2: Doc 1029 with score of 0.05853658536585366
+3: Doc 1013 with score of 0.057534246575342465
+4: Doc 131 with score of 0.05138888888888889
+5: Doc 45 with score of 0.051351351351351354
+Top 5 results for query 134:
+1: Doc 1201 with score of 0.13585526315789473
+2: Doc 523 with score of 0.09635627530364373
+3: Doc 96 with score of 0.09086395233366434
+4: Doc 770 with score of 0.08828522920203735
+5: Doc 45 with score of 0.08534850640113797
+Top 5 results for query 135:
+1: Doc 1201 with score of 0.154375
+2: Doc 523 with score of 0.09692307692307692
+3: Doc 45 with score of 0.0945945945945946
+4: Doc 770 with score of 0.0935483870967742
+5: Doc 157 with score of 0.09074074074074075
+Top 5 results for query 136:
+1: Doc 1201 with score of 0.12163461538461538
+2: Doc 523 with score of 0.07455621301775148
+3: Doc 45 with score of 0.07380457380457381
+4: Doc 770 with score of 0.07320099255583126
+5: Doc 1382 with score of 0.072
+Top 5 results for query 137:
+1: Doc 1201 with score of 0.026071428571428572
+2: Doc 1026 with score of 0.02142857142857143
+3: Doc 1023 with score of 0.019727891156462583
+4: Doc 96 with score of 0.018867924528301886
+5: Doc 1198 with score of 0.01875681570338059
+Top 5 results for query 138:
+1: Doc 1201 with score of 0.13214285714285715
+2: Doc 96 with score of 0.10444743935309973
+3: Doc 131 with score of 0.10218253968253968
+4: Doc 523 with score of 0.1010989010989011
+5: Doc 45 with score of 0.10038610038610038
+Top 5 results for query 139:
+1: Doc 1201 with score of 0.15243055555555557
+2: Doc 523 with score of 0.1170940170940171
+3: Doc 96 with score of 0.11530398322851153
+4: Doc 131 with score of 0.11304012345679013
+5: Doc 45 with score of 0.11186186186186187
+Top 5 results for query 140:
+1: Doc 1201 with score of 0.08375
+2: Doc 157 with score of 0.05092592592592592
+3: Doc 18 with score of 0.04923076923076923
+4: Doc 452 with score of 0.04774193548387097
+5: Doc 1149 with score of 0.04722222222222222
+Top 5 results for query 141:
+1: Doc 1149 with score of 0.04050925925925926
+2: Doc 1044 with score of 0.03508771929824561
+3: Doc 889 with score of 0.034203980099502485
+4: Doc 1038 with score of 0.034013605442176874
+5: Doc 851 with score of 0.033816425120772944
+Top 5 results for query 142:
+1: Doc 971 with score of 0.012605042016806723
+2: Doc 993 with score of 0.012175324675324676
+3: Doc 636 with score of 0.011789181692094313
+4: Doc 174 with score of 0.011501210653753027
+5: Doc 696 with score of 0.011083743842364532
+Top 5 results for query 143:
+1: Doc 1201 with score of 0.0764423076923077
+2: Doc 1149 with score of 0.05876068376068376
+3: Doc 523 with score of 0.054437869822485205
+4: Doc 452 with score of 0.05161290322580645
+5: Doc 45 with score of 0.05093555093555094
+Top 5 results for query 144:
+1: Doc 1045 with score of 0.046218487394957986
+2: Doc 1201 with score of 0.04598214285714286
+3: Doc 523 with score of 0.04065934065934066
+4: Doc 131 with score of 0.040426587301587304
+5: Doc 45 with score of 0.04005791505791506
+Top 5 results for query 145:
+1: Doc 1201 with score of 0.05243055555555556
+2: Doc 1045 with score of 0.0392156862745098
+3: Doc 452 with score of 0.03620071684587814
+4: Doc 1175 with score of 0.03567787971457696
+5: Doc 1149 with score of 0.034722222222222224
+Top 5 results for query 146:
+1: Doc 1201 with score of 0.05661764705882353
+2: Doc 1045 with score of 0.05190311418685121
+3: Doc 523 with score of 0.04796380090497738
+4: Doc 1175 with score of 0.04317323259579061
+5: Doc 131 with score of 0.0428921568627451
+Top 5 results for query 147:
+1: Doc 1201 with score of 0.10803571428571429
+2: Doc 45 with score of 0.06756756756756757
+3: Doc 523 with score of 0.06703296703296703
+4: Doc 770 with score of 0.06682027649769585
+5: Doc 96 with score of 0.06334231805929919
+Top 5 results for query 148:
+1: Doc 1045 with score of 0.047058823529411764
+2: Doc 1118 with score of 0.03829787234042553
+3: Doc 1048 with score of 0.037142857142857144
+4: Doc 1177 with score of 0.03684210526315789
+5: Doc 761 with score of 0.036170212765957444
+Top 5 results for query 149:
+1: Doc 1201 with score of 0.055
+2: Doc 45 with score of 0.03963963963963964
+3: Doc 523 with score of 0.038974358974358976
+4: Doc 802 with score of 0.03870967741935484
+5: Doc 826 with score of 0.03836930455635491
+Top 5 results for query 150:
+1: Doc 1201 with score of 0.08509615384615385
+2: Doc 770 with score of 0.05707196029776675
+3: Doc 523 with score of 0.05680473372781065
+4: Doc 1313 with score of 0.0546218487394958
+5: Doc 45 with score of 0.05093555093555094
+Top 5 results for query 151:
+1: Doc 1201 with score of 0.11875
+2: Doc 523 with score of 0.08
+3: Doc 770 with score of 0.07634408602150537
+4: Doc 96 with score of 0.07484276729559748
+5: Doc 1313 with score of 0.06918767507002802
+Top 5 results for query 152:
+1: Doc 1201 with score of 0.116015625
+2: Doc 523 with score of 0.075
+3: Doc 770 with score of 0.07258064516129033
+4: Doc 96 with score of 0.06780660377358491
+5: Doc 308 with score of 0.06570512820512821
+Top 5 results for query 153:
+1: Doc 1201 with score of 0.08046875
+2: Doc 523 with score of 0.051923076923076926
+3: Doc 770 with score of 0.04838709677419355
+4: Doc 157 with score of 0.047453703703703706
+5: Doc 341 with score of 0.04659090909090909
+Top 5 results for query 154:
+1: Doc 111 with score of 0.02197802197802198
+2: Doc 1201 with score of 0.019230769230769232
+3: Doc 1086 with score of 0.01839464882943144
+4: Doc 745 with score of 0.018315018315018316
+5: Doc 180 with score of 0.017582417582417582
+Top 5 results for query 155:
+1: Doc 96 with score of 0.041273584905660375
+2: Doc 877 with score of 0.03571428571428571
+3: Doc 131 with score of 0.034722222222222224
+4: Doc 1115 with score of 0.03235294117647059
+5: Doc 965 with score of 0.031914893617021274
+Top 5 results for query 156:
+1: Doc 1201 with score of 0.03409090909090909
+2: Doc 749 with score of 0.022727272727272728
+3: Doc 269 with score of 0.022298456260720412
+4: Doc 798 with score of 0.021918792669780814
+5: Doc 55 with score of 0.02176696542893726
+Top 5 results for query 157:
+1: Doc 998 with score of 0.043010752688172046
+2: Doc 482 with score of 0.041005291005291
+3: Doc 1149 with score of 0.04034391534391534
+4: Doc 779 with score of 0.0367965367965368
+5: Doc 748 with score of 0.03492063492063492
+Top 5 results for query 158:
+1: Doc 1201 with score of 0.1109375
+2: Doc 45 with score of 0.07432432432432433
+3: Doc 523 with score of 0.07307692307692308
+4: Doc 96 with score of 0.07193396226415094
+5: Doc 131 with score of 0.07118055555555555
+Top 5 results for query 159:
+1: Doc 1201 with score of 0.09826388888888889
+2: Doc 523 with score of 0.09145299145299145
+3: Doc 131 with score of 0.08140432098765432
+4: Doc 45 with score of 0.07732732732732733
+5: Doc 96 with score of 0.0759958071278826
+Top 5 results for query 160:
+1: Doc 1201 with score of 0.04525862068965517
+2: Doc 523 with score of 0.0376657824933687
+3: Doc 131 with score of 0.034722222222222224
+4: Doc 45 with score of 0.034482758620689655
+5: Doc 1071 with score of 0.033917467495760314
+Top 5 results for query 161:
+1: Doc 1201 with score of 0.053348214285714284
+2: Doc 1149 with score of 0.040674603174603176
+3: Doc 1386 with score of 0.04008746355685131
+4: Doc 523 with score of 0.038461538461538464
+5: Doc 234 with score of 0.03751500600240096
+Top 5 results for query 162:
+1: Doc 1201 with score of 0.04918478260869565
+2: Doc 1149 with score of 0.0464975845410628
+3: Doc 45 with score of 0.03407755581668625
+4: Doc 559 with score of 0.03324808184143223
+5: Doc 1383 with score of 0.03191065017949741
+Top 5 results for query 163:
+1: Doc 1201 with score of 0.10427631578947369
+2: Doc 523 with score of 0.0874493927125506
+3: Doc 45 with score of 0.07610241820768136
+4: Doc 131 with score of 0.07529239766081872
+5: Doc 96 with score of 0.07447864945382324
+Top 5 results for query 164:
+1: Doc 1201 with score of 0.10234375
+2: Doc 523 with score of 0.07307692307692308
+3: Doc 45 with score of 0.07263513513513513
+4: Doc 96 with score of 0.06839622641509434
+5: Doc 131 with score of 0.06684027777777778
+Top 5 results for query 165:
+1: Doc 1201 with score of 0.07321428571428572
+2: Doc 1149 with score of 0.05654761904761905
+3: Doc 170 with score of 0.05652173913043478
+4: Doc 64 with score of 0.056043956043956046
+5: Doc 803 with score of 0.05580357142857143
+Top 5 results for query 166:
+1: Doc 1201 with score of 0.065234375
+2: Doc 96 with score of 0.05483490566037736
+3: Doc 170 with score of 0.051630434782608696
+4: Doc 64 with score of 0.05096153846153846
+5: Doc 382 with score of 0.05092592592592592
+Top 5 results for query 167:
+1: Doc 1201 with score of 0.055
+2: Doc 1149 with score of 0.04513888888888889
+3: Doc 523 with score of 0.043076923076923075
+4: Doc 736 with score of 0.041666666666666664
+5: Doc 96 with score of 0.03915094339622641
+Top 5 results for query 168:
+1: Doc 1201 with score of 0.14473684210526316
+2: Doc 523 with score of 0.10850202429149798
+3: Doc 45 with score of 0.10028449502133713
+4: Doc 770 with score of 0.09507640067911714
+5: Doc 157 with score of 0.09454191033138401
+Top 5 results for query 169:
+1: Doc 1201 with score of 0.08723958333333333
+2: Doc 523 with score of 0.06923076923076923
+3: Doc 770 with score of 0.06451612903225806
+4: Doc 341 with score of 0.06287878787878788
+5: Doc 157 with score of 0.06172839506172839
+Top 5 results for query 170:
+1: Doc 1201 with score of 0.03599137931034483
+2: Doc 523 with score of 0.030238726790450927
+3: Doc 96 with score of 0.02830188679245283
+4: Doc 1313 with score of 0.02680382497826717
+5: Doc 802 with score of 0.026696329254727477
+Top 5 results for query 171:
+1: Doc 635 with score of 0.03145917001338688
+2: Doc 1038 with score of 0.030612244897959183
+3: Doc 175 with score of 0.029715762273901807
+4: Doc 431 with score of 0.028781793842034806
+5: Doc 270 with score of 0.027210884353741496
+Top 5 results for query 172:
+1: Doc 1201 with score of 0.09375
+2: Doc 1382 with score of 0.07022222222222223
+3: Doc 1149 with score of 0.06944444444444445
+4: Doc 45 with score of 0.06906906906906907
+5: Doc 523 with score of 0.06837606837606838
+Top 5 results for query 173:
+1: Doc 1201 with score of 0.06682692307692308
+2: Doc 96 with score of 0.05878084179970972
+3: Doc 523 with score of 0.04970414201183432
+4: Doc 308 with score of 0.048323471400394474
+5: Doc 45 with score of 0.04677754677754678
+Top 5 results for query 174:
+1: Doc 483 with score of 0.04040404040404041
+2: Doc 411 with score of 0.03512396694214876
+3: Doc 998 with score of 0.01906158357771261
+4: Doc 178 with score of 0.018867924528301886
+5: Doc 501 with score of 0.018648018648018648
+Top 5 results for query 175:
+1: Doc 1256 with score of 0.050793650793650794
+2: Doc 941 with score of 0.03968253968253968
+3: Doc 139 with score of 0.03523035230352303
+4: Doc 18 with score of 0.03076923076923077
+5: Doc 242 with score of 0.02981029810298103
+Top 5 results for query 176:
+1: Doc 5 with score of 0.014957264957264958
+2: Doc 542 with score of 0.012254901960784314
+3: Doc 181 with score of 0.011574074074074073
+4: Doc 963 with score of 0.010964912280701754
+5: Doc 586 with score of 0.010752688172043012
+Top 5 results for query 177:
+1: Doc 131 with score of 0.045405982905982904
+2: Doc 523 with score of 0.04497041420118343
+3: Doc 482 with score of 0.04487179487179487
+4: Doc 507 with score of 0.04230769230769231
+5: Doc 445 with score of 0.04142011834319527
+Top 5 results for query 178:
+1: Doc 1201 with score of 0.058854166666666666
+2: Doc 1149 with score of 0.04282407407407408
+3: Doc 591 with score of 0.041666666666666664
+4: Doc 523 with score of 0.041025641025641026
+5: Doc 341 with score of 0.04090909090909091
+Top 5 results for query 179:
+1: Doc 1201 with score of 0.08106060606060606
+2: Doc 523 with score of 0.05827505827505827
+3: Doc 802 with score of 0.0552297165200391
+4: Doc 770 with score of 0.053763440860215055
+5: Doc 96 with score of 0.05345911949685535
+Top 5 results for query 180:
+1: Doc 548 with score of 0.026515151515151516
+2: Doc 635 with score of 0.02530120481927711
+3: Doc 616 with score of 0.02361111111111111
+4: Doc 393 with score of 0.021212121212121213
+5: Doc 1290 with score of 0.020618556701030927
+Top 5 results for query 181:
+1: Doc 997 with score of 0.032467532467532464
+2: Doc 350 with score of 0.030612244897959183
+3: Doc 1195 with score of 0.02947845804988662
+4: Doc 1352 with score of 0.027982326951399118
+5: Doc 409 with score of 0.025510204081632654
+Top 5 results for query 182:
+1: Doc 1201 with score of 0.06215277777777778
+2: Doc 96 with score of 0.05293501048218029
+3: Doc 45 with score of 0.04804804804804805
+4: Doc 523 with score of 0.046153846153846156
+5: Doc 131 with score of 0.04513888888888889
+Top 5 results for query 183:
+1: Doc 382 with score of 0.03133903133903134
+2: Doc 175 with score of 0.03041144901610018
+3: Doc 813 with score of 0.023835319609967497
+4: Doc 993 with score of 0.02097902097902098
+5: Doc 270 with score of 0.02040816326530612
+Top 5 results for query 184:
+1: Doc 382 with score of 0.02962962962962963
+2: Doc 254 with score of 0.023809523809523808
+3: Doc 96 with score of 0.020754716981132074
+4: Doc 411 with score of 0.01818181818181818
+5: Doc 993 with score of 0.01818181818181818
+Top 5 results for query 185:
+1: Doc 856 with score of 0.040983606557377046
+2: Doc 857 with score of 0.03888888888888889
+3: Doc 1008 with score of 0.03461538461538462
+4: Doc 766 with score of 0.02975206611570248
+5: Doc 382 with score of 0.02962962962962963
+Top 5 results for query 186:
+1: Doc 775 with score of 0.024
+2: Doc 1062 with score of 0.017741935483870968
+3: Doc 610 with score of 0.016666666666666666
+4: Doc 376 with score of 0.016363636363636365
+5: Doc 1243 with score of 0.015873015873015872
+Top 5 results for query 187:
+1: Doc 1201 with score of 0.10073529411764706
+2: Doc 96 with score of 0.07269700332963375
+3: Doc 45 with score of 0.07074721780604133
+4: Doc 523 with score of 0.06877828054298643
+5: Doc 131 with score of 0.06781045751633986
+Top 5 results for query 188:
+1: Doc 1201 with score of 0.06578947368421052
+2: Doc 798 with score of 0.044518410651133766
+3: Doc 779 with score of 0.04425837320574163
+4: Doc 690 with score of 0.044142614601018676
+5: Doc 731 with score of 0.043777668470241025
+Top 5 results for query 189:
+1: Doc 1038 with score of 0.06015037593984962
+2: Doc 1201 with score of 0.05986842105263158
+3: Doc 523 with score of 0.058299595141700404
+4: Doc 131 with score of 0.05555555555555555
+5: Doc 482 with score of 0.05555555555555555
+Top 5 results for query 190:
+1: Doc 1201 with score of 0.06754807692307692
+2: Doc 523 with score of 0.052662721893491124
+3: Doc 131 with score of 0.04887820512820513
+4: Doc 96 with score of 0.04825834542815675
+5: Doc 770 with score of 0.04528535980148883
+Top 5 results for query 191:
+1: Doc 1201 with score of 0.05243055555555556
+2: Doc 523 with score of 0.035897435897435895
+3: Doc 1313 with score of 0.031746031746031744
+4: Doc 114 with score of 0.030789825970548863
+5: Doc 61 with score of 0.030753968253968252
+Top 5 results for query 192:
+1: Doc 735 with score of 0.03535353535353535
+2: Doc 647 with score of 0.023809523809523808
+3: Doc 886 with score of 0.014814814814814815
+4: Doc 392 with score of 0.014619883040935672
+5: Doc 340 with score of 0.014492753623188406
+Top 5 results for query 193:
+1: Doc 736 with score of 0.044642857142857144
+2: Doc 730 with score of 0.04342857142857143
+3: Doc 737 with score of 0.04120879120879121
+4: Doc 350 with score of 0.04081632653061224
+5: Doc 735 with score of 0.03896103896103896
+Top 5 results for query 194:
+1: Doc 1201 with score of 0.10625
+2: Doc 523 with score of 0.0822742474916388
+3: Doc 45 with score of 0.07285546415981199
+4: Doc 770 with score of 0.07223001402524544
+5: Doc 96 with score of 0.06972928630024611
+Top 5 results for query 195:
+1: Doc 1201 with score of 0.1525
+2: Doc 523 with score of 0.10384615384615385
+3: Doc 45 with score of 0.1
+4: Doc 770 with score of 0.09274193548387097
+5: Doc 157 with score of 0.09212962962962963
+Top 5 results for query 196:
+1: Doc 1201 with score of 0.13458333333333333
+2: Doc 523 with score of 0.10871794871794872
+3: Doc 45 with score of 0.10540540540540541
+4: Doc 96 with score of 0.10062893081761007
+5: Doc 131 with score of 0.09814814814814815
+Top 5 results for query 197:
+1: Doc 1201 with score of 0.08375
+2: Doc 523 with score of 0.052307692307692305
+3: Doc 770 with score of 0.0467741935483871
+4: Doc 157 with score of 0.044444444444444446
+5: Doc 192 with score of 0.0443298969072165
+Top 5 results for query 198:
+1: Doc 1201 with score of 0.15220588235294116
+2: Doc 523 with score of 0.10316742081447963
+3: Doc 96 with score of 0.10210876803551609
+4: Doc 45 with score of 0.09538950715421304
+5: Doc 770 with score of 0.09297912713472485
+Top 5 results for query 199:
+1: Doc 1118 with score of 0.01800327332242226
+2: Doc 748 with score of 0.015384615384615385
+3: Doc 1070 with score of 0.014245014245014245
+4: Doc 1059 with score of 0.012933968686181076
+5: Doc 482 with score of 0.01282051282051282
+Top 5 results for query 200:
+1: Doc 1201 with score of 0.056578947368421055
+2: Doc 523 with score of 0.045344129554655874
+3: Doc 45 with score of 0.03982930298719772
+4: Doc 826 with score of 0.03862173419159409
+5: Doc 874 with score of 0.03859649122807018
+Top 5 results for query 201:
+1: Doc 1201 with score of 0.103125
+2: Doc 523 with score of 0.07403846153846154
+3: Doc 45 with score of 0.06841216216216216
+4: Doc 170 with score of 0.06521739130434782
+5: Doc 1313 with score of 0.06486344537815127
+Top 5 results for query 202:
+1: Doc 411 with score of 0.024147727272727272
+2: Doc 1285 with score of 0.022727272727272728
+3: Doc 41 with score of 0.022606382978723406
+4: Doc 1201 with score of 0.022265625
+5: Doc 1256 with score of 0.02142857142857143
+Top 5 results for query 203:
+1: Doc 482 with score of 0.038461538461538464
+2: Doc 1149 with score of 0.03311965811965812
+3: Doc 1352 with score of 0.03251387787470262
+4: Doc 1333 with score of 0.03235082674335011
+5: Doc 507 with score of 0.03076923076923077
+Top 5 results for query 204:
+1: Doc 971 with score of 0.0273109243697479
+2: Doc 174 with score of 0.01937046004842615
+3: Doc 57 with score of 0.017857142857142856
+4: Doc 1352 with score of 0.017673048600883652
+5: Doc 310 with score of 0.017374517374517374
+Top 5 results for query 205:
+1: Doc 335 with score of 0.02467343976777939
+2: Doc 4 with score of 0.023931623931623933
+3: Doc 382 with score of 0.022792022792022793
+4: Doc 133 with score of 0.02040816326530612
+5: Doc 256 with score of 0.020361990950226245
+Top 5 results for query 206:
+1: Doc 1290 with score of 0.05
+2: Doc 1201 with score of 0.0465625
+3: Doc 635 with score of 0.03795180722891566
+4: Doc 411 with score of 0.031818181818181815
+5: Doc 308 with score of 0.03141025641025641
+Top 5 results for query 207:
+1: Doc 1290 with score of 0.018900343642611683
+2: Doc 635 with score of 0.01606425702811245
+3: Doc 66 with score of 0.01126126126126126
+4: Doc 1169 with score of 0.011168384879725086
+5: Doc 695 with score of 0.011072261072261072
+Top 5 results for query 208:
+1: Doc 1201 with score of 0.1725
+2: Doc 523 with score of 0.11938461538461538
+3: Doc 45 with score of 0.11243243243243244
+4: Doc 96 with score of 0.11169811320754718
+5: Doc 770 with score of 0.10967741935483871
+Top 5 results for query 209:
+1: Doc 1201 with score of 0.08660714285714285
+2: Doc 45 with score of 0.06274131274131274
+3: Doc 798 with score of 0.05759457933370977
+4: Doc 959 with score of 0.05476190476190476
+5: Doc 1149 with score of 0.05357142857142857
+Top 5 results for query 210:
+1: Doc 1201 with score of 0.08244047619047619
+2: Doc 523 with score of 0.060805860805860805
+3: Doc 96 with score of 0.06019766397124888
+4: Doc 45 with score of 0.05791505791505792
+5: Doc 131 with score of 0.05555555555555555
+Top 5 results for query 211:
+1: Doc 1201 with score of 0.06696428571428571
+2: Doc 96 with score of 0.04919137466307277
+3: Doc 45 with score of 0.04343629343629344
+4: Doc 770 with score of 0.04262672811059908
+5: Doc 741 with score of 0.042328042328042326
+Top 5 results for query 212:
+1: Doc 1201 with score of 0.059821428571428574
+2: Doc 96 with score of 0.04851752021563342
+3: Doc 45 with score of 0.04343629343629344
+4: Doc 523 with score of 0.041758241758241756
+5: Doc 1177 with score of 0.041353383458646614
+Top 5 results for query 213:
+1: Doc 1201 with score of 0.10625
+2: Doc 523 with score of 0.07420814479638009
+3: Doc 96 with score of 0.06936736958934517
+4: Doc 770 with score of 0.06641366223908918
+5: Doc 45 with score of 0.06279809220985691
+Top 5 results for query 214:
+1: Doc 1201 with score of 0.056640625
+2: Doc 523 with score of 0.04903846153846154
+3: Doc 131 with score of 0.041666666666666664
+4: Doc 770 with score of 0.04032258064516129
+5: Doc 114 with score of 0.0391566265060241
+Top 5 results for query 215:
+1: Doc 1201 with score of 0.09659090909090909
+2: Doc 523 with score of 0.07972027972027972
+3: Doc 770 with score of 0.07258064516129033
+4: Doc 45 with score of 0.07063882063882064
+5: Doc 61 with score of 0.06655844155844155
+Top 5 results for query 216:
+1: Doc 1201 with score of 0.05347222222222222
+2: Doc 175 with score of 0.04780361757105943
+3: Doc 64 with score of 0.046153846153846156
+4: Doc 693 with score of 0.04244694132334582
+5: Doc 770 with score of 0.042114695340501794
+Top 5 results for query 217:
+1: Doc 1201 with score of 0.06015625
+2: Doc 523 with score of 0.05961538461538462
+3: Doc 96 with score of 0.05129716981132076
+4: Doc 45 with score of 0.0472972972972973
+5: Doc 1313 with score of 0.046218487394957986
+Top 5 results for query 218:
+1: Doc 1201 with score of 0.14182692307692307
+2: Doc 523 with score of 0.11124260355029586
+3: Doc 45 with score of 0.09043659043659044
+4: Doc 770 with score of 0.08933002481389578
+5: Doc 61 with score of 0.08516483516483517
+Top 5 results for query 219:
+1: Doc 1201 with score of 0.11923076923076924
+2: Doc 61 with score of 0.07280219780219781
+3: Doc 770 with score of 0.07196029776674938
+4: Doc 96 with score of 0.06894049346879536
+5: Doc 523 with score of 0.06863905325443787
+Top 5 results for query 220:
+1: Doc 23 with score of 0.023880597014925373
+2: Doc 4 with score of 0.022222222222222223
+3: Doc 382 with score of 0.022222222222222223
+4: Doc 335 with score of 0.02169811320754717
+5: Doc 779 with score of 0.021022727272727273
+Top 5 results for query 221:
+1: Doc 23 with score of 0.021890547263681594
+2: Doc 234 with score of 0.021848739495798318
+3: Doc 3 with score of 0.021212121212121213
+4: Doc 1386 with score of 0.02108843537414966
+5: Doc 189 with score of 0.020105820105820106
+Top 5 results for query 222:
+1: Doc 1201 with score of 0.09097222222222222
+2: Doc 45 with score of 0.06606606606606606
+3: Doc 523 with score of 0.06495726495726496
+4: Doc 131 with score of 0.06404320987654322
+5: Doc 96 with score of 0.06079664570230608
+Top 5 results for query 223:
+1: Doc 400 with score of 0.04497354497354497
+2: Doc 419 with score of 0.0392156862745098
+3: Doc 96 with score of 0.03668763102725367
+4: Doc 484 with score of 0.03608736942070275
+5: Doc 826 with score of 0.03437250199840128
+Top 5 results for query 224:
+1: Doc 1201 with score of 0.09119318181818181
+2: Doc 523 with score of 0.06573426573426573
+3: Doc 1313 with score of 0.05844155844155844
+4: Doc 157 with score of 0.0563973063973064
+5: Doc 61 with score of 0.056006493506493504
