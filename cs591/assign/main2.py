@@ -1,3 +1,6 @@
+"""
+Usage: python3 main.py [binary/count] queryset.txt dataset.txt
+"""
 import sys
 import re
 from collections import Counter
