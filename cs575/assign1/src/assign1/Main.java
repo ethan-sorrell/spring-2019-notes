@@ -20,7 +20,8 @@ public class Main {
         sc.useDelimiter("\\Z");
         String input = sc.next();
         List<String> tokens = Tokenizer.Tokenize(input);
-        // List<Sym> grammarStack = new ArrayList<Sym>();
+        Parser.Parse(tokens);
+        /*
         Stack<Sym> grammarStack = new Stack<Sym>();
         grammarStack.add(Sym.ELEMENT);
         Stack<String> nameStack = new Stack<String>();
@@ -28,8 +29,6 @@ public class Main {
         String token;
         Sym sym;
         while (tokens.size() > 0) {
-            if (rulesApplied.size() > 0)
-                System.out.println(rulesApplied.get((rulesApplied.size()-1)));
             token = tokens.get(0);
             sym = grammarStack.pop();
             if (token == "<") {
@@ -51,8 +50,7 @@ public class Main {
                         rulesApplied.add(4);
                         grammarStack.push(Sym.QENDTAG);
                         grammarStack.push(Sym.ELEMENT);
-                    }
-                    else if (sym == Sym.STARTTAG) {
+                    } else if (sym == Sym.STARTTAG) {
                         // RULE 3
                         rulesApplied.add(3);
                         grammarStack.push(Sym.QATTR);
@@ -174,6 +172,7 @@ public class Main {
                 }
             }
         }
+        */
     }
 }
 
