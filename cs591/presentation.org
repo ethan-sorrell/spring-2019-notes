@@ -1,0 +1,49 @@
+There are several levels at which we can analyze a query using nlp
+NLP is especially important for all the bells & whistles of modern IR systems.
+Query Expansion
+
+- Phonetic level
+  - Most important for voice recognition systems
+  - Could also be useful for advanced error correction/spell checking systems
+- Morphological Level
+  - Thinking stemming
+- Syntactic Level
+  - Parsing the structure of a query.
+  - John sues Jane vs. Jane sues John
+  - Understanding object vs. subject of a verb
+  - More advanced systems can start to classify different types of verbs
+  - Action vs Possession vs Equivalence
+  - WAIT
+  - Some techniques include Tagging and FSA
+  - Also CFG
+- Semantic Level
+  - Beyond the meaning derived from structure is meaning of individual words. Can be context dependent
+  - Tie the bow vs. Tie the score
+- Discourse Level
+  - Higher-level structure (document structure)
+  - Most research papers will begin with an abstract which summarizes the rest of the document
+  - Useful for summarization and weighting methods
+- Pragmatic Level
+  - Requires context that can't be gathered from the query alone
+  - Think Watson or Siri. 
+  - "What was the weather like three years ago, on this day?"
+
+- Tagging
+  - Each word is given a tag e.g. Adjective, Verb, Preposition
+  - 87-tag tagset that's pretty common, but it's really at the discretion of the designer
+  - Most words are easy/unambiguous, but many words are ambiguous
+  - Rule-based or deterministic vs. Stochastic or Probabilistic
+  - ELIZA and Prolog
+  - Now Deep Learning and Machine Learning
+
+- Lexical Analysis (morphological level, syntactic level, semantic level)
+  - n-grams (basically word phrases)
+  - Useful for prediction, spell-checking, expansion
+  - Example of using bi-grams to predict the next word:
+    - P(w_2|w_1) = P(w_1|w_2)P(w_2) / P(w_1)
+    - P(w_1) cancels out since it will be the same for all possible w_2
+
+
+- "text retrieval systems also add or create knowledge bases with internal lexicons, semantic networks, or lists of phraes, synonyms"
+- CFG and FSA examples
+- More on rule based vs probabilistic
