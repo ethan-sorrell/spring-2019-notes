@@ -1,0 +1,9 @@
+5
+[ab,b]
+[a,ba]
+[c,cb]
+[ca,c]
+[cd,a]
+[b,dc]
+[dc,cd]
+

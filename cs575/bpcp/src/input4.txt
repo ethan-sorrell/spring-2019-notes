@@ -1,0 +1,3 @@
+10
+[aaaaa,a]
+[a,aaaaaa]
