@@ -1,3 +1,4 @@
 #!/bin/bash
-javac assign1/Main.java
-java assign1/Main
+javac topdown/Main.java
+java topdown/Main test.xml
+
