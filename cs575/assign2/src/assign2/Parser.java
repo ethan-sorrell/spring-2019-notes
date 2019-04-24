@@ -82,11 +82,13 @@ public class Parser {
             int rule = GetReduction(parseStack);
             parseStack = PerformReduction(parseStack, rule);
         }
-        System.out.println(parseStack);
+        // System.out.println(parseStack);
         if (parseStack.peek() == Sym.ELEMENT && parseStack.size() == 1) {
             System.out.println("Reducing Element to Document");
             parseStack.pop();
             parseStack.push(Sym.DOCUMENT);
+        } else {
+            System.out.println("Could not reduce to Document");
         }
     }
 

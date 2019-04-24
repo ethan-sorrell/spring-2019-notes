@@ -1,0 +1,4 @@
+11
+[a,ab]
+[bc,cbcb]
+[bcbcbcbcbcbcbcbcbcbca,ca]

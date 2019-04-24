@@ -1,4 +1,4 @@
-10
+6
 [ab,bb]
 [bbbb,b]
 [a,bbaaba]
