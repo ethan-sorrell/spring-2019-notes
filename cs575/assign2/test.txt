@@ -1,0 +1,4 @@
+<recipe name="bread" prep_time="5 mins" cook_time="3 hours">
+   <title>Basic bread</title>
+   <ingredient amount="3" unit="cups">Flour</ingredient>
+</recipe>

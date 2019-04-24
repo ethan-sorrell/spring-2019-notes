@@ -1,4 +1,4 @@
-package assign1;
+package assign2;
 import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,11 +16,10 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         if (args.length != 1) {
-            System.out.println("Expected 1 argument got " + args.length);
+            System.out.println("Expected 1 argument, found " + args.length);
             System.exit(1);
         }
         File file = new File(args[0]);
-        // File file = new File("/home/ethan/git/spring-2019-notes/cs575/assign1/test.txt");
         Scanner sc = new Scanner(file);
         sc.useDelimiter("\\Z");
         String input = sc.next();

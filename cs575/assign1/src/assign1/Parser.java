@@ -17,10 +17,16 @@ public class Parser {
     public static String Pair(String token, Sym sym) {
         if (Arrays.asList("<", "=", ">", "/>", "</").contains(token)) {
             return token + "_" + sym.name();
-        } else if (token.startsWith("'") || token.startsWith("\"")) {
-            return "QSTR_" + sym.name();
-        } else {
+        } else if (token.compareTo("String") == 0) {
             return "STR_" + sym.name();
+        } else if (token.compareTo("Data") == 0){
+            return "DATA_" + sym.name();
+        } else if (token.compareTo("Name") == 0){
+            return "NAME_" + sym.name();
+        } else {
+            System.out.println("ERROR invalid token: " + token);
+            System.exit(1);
+            return "";
         }
     }
 
@@ -39,23 +45,27 @@ public class Parser {
                 if (tokens.indexOf("/>") == -1 ||
                     tokens.indexOf(">") < tokens.indexOf("/>")) {
                     // RULE 1
+                    System.out.println("Element -> StartTag QEndTag");
                     rulesApplied.add(1);
                     grammarStack.push(Sym.QENDTAG);
                     grammarStack.push(Sym.STARTTAG);
                 } else {
                     // RULE 2
+                    System.out.println("Element -> EmptyTag");
                     rulesApplied.add(2);
                     grammarStack.push(Sym.EMPTYTAG);
                 }
                 break;
             case "<_QENDTAG":
                 // RULE 4
+                System.out.println("QEndTag -> Element QEndTag");
                 rulesApplied.add(4);
                 grammarStack.push(Sym.QENDTAG);
                 grammarStack.push(Sym.ELEMENT);
                 break;
             case "<_STARTTAG":
                 // RULE 3
+                System.out.println("StartTag -> < Name QAttribute");
                 rulesApplied.add(3);
                 grammarStack.push(Sym.QATTR);
                 grammarStack.push(Sym.NAME);
@@ -63,6 +73,7 @@ public class Parser {
                 break;
             case "<_EMPTYTAG":
                 // RULE 8
+                System.out.println("EmptyTag -> < Name QAttribute");
                 rulesApplied.add(8);
                 grammarStack.push(Sym.QATTR);
                 grammarStack.push(Sym.NAME);
@@ -70,6 +81,7 @@ public class Parser {
                 break;
             case "</_ENDTAG":
                 // RULE 7
+                System.out.println("EndTag -> </ Name EB");
                 rulesApplied.add(7);
                 grammarStack.push(Sym.EB);
                 grammarStack.push(Sym.NAME);
@@ -77,60 +89,66 @@ public class Parser {
                 break;
             case "</_QENDTAG":
                 // RULE 6
+                System.out.println("QEndTag -> EndTag");
                 rulesApplied.add(6);
                 grammarStack.push(Sym.ENDTAG);
                 break;
             case ">_QATTR":
                 // RULE 11
+                System.out.println("Qattribute -> >");
                 rulesApplied.add(11);
                 tokens.remove(0);
                 break;
             case ">_EB":
                 // RULE 13
+                System.out.println("EB -> >");
                 rulesApplied.add(13);
                 tokens.remove(0);
                 break;
             case "/>_QATTR":
                 // RULE 12
+                System.out.println("QAttribute -> />");
                 rulesApplied.add(12);
                 tokens.remove(0);
                 break;
             case "=_EQ":
+                // Rule 14
+                System.out.println("EQ -> =");
                 rulesApplied.add(14);
                 tokens.remove(0);
                 break;
-            case "QSTR_STRING":
-                // TODO: parse string
-                rulesApplied.add(69);
+            case "STR_STRING":
+                // rulesApplied.add(69);
                 tokens.remove(0);
                 break;
-            case "STR_ATTR":
+            case "NAME_ATTR":
                 // RULE 9
+                System.out.println("Attribute -> Name EQ String");
                 rulesApplied.add(9);
                 grammarStack.push(Sym.STRING);
                 grammarStack.push(Sym.EQ);
                 grammarStack.push(Sym.NAME);
                 break;
-            case "STR_QATTR":
+            case "NAME_QATTR":
                 // RULE 10
+                System.out.println("QAttribute -> Attribute QAttribute");
                 rulesApplied.add(10);
                 grammarStack.push(Sym.QATTR);
                 grammarStack.push(Sym.ATTR);
                 break;
-            case "STR_NAME":
-                // TODO: parse name
-                rulesApplied.add(69);
+            case "NAME_NAME":
+                // rulesApplied.add(69);
                 tokens.remove(0);
                 break;
-            case "STR_QENDTAG":
+            case "DATA_QENDTAG":
                 //RULE 5
+                System.out.println("QEndTag -> Data QEndTag");
                 rulesApplied.add(5);
                 grammarStack.push(Sym.QENDTAG);
                 grammarStack.push(Sym.DATA);
                 break;
-            case "STR_DATA":
-                // TODO: parse data
-                rulesApplied.add(70);
+            case "DATA_DATA":
+                // rulesApplied.add(70);
                 tokens.remove(0);
                 break;
             default:
@@ -142,7 +160,6 @@ public class Parser {
                 System.exit(1);
             }
         }
-        System.out.println("Done");
-        System.out.println(rulesApplied);
+        // System.out.println(rulesApplied);
     }
 }
