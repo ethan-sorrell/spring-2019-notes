@@ -1,0 +1,9 @@
+[1] - https://www.cs.cmu.edu/~nasmith/LS2/das-martins.07.pdf
+[2] - https://arxiv.org/pdf/1707.02268.pdf
+[3] - https://arxiv.org/pdf/1808.01426.pdf
+[4] - https://www.aclweb.org/anthology/W04-1013
+[5] - https://www.cs.bgu.ac.il/~elhadad/nlp16/nenkova-mckeown.pdf
+[6] - http://www.cs.columbia.edu/nlp/papers/1999/radev_al_99a.pdf
+[7] - https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
+[8] - https://hal.archives-ouvertes.fr/hal-00782442/document
+[9] - https://www.aclweb.org/anthology/W17-1003
