@@ -1,0 +1,5 @@
+10
+[b,a]
+[ab,abab]
+[aba,b]
+[aa,a]
